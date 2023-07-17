@@ -1,0 +1,72 @@
+{
+    "vtex.menu@2.x:menu#menu-linhas":{    
+		"props": {
+			"experimentalOptimizeRendering": true,
+			"blockClass":["mobile-menu", "menu-items"],
+			"items": [
+								
+				{
+					"type": "custom",
+					"href": "/",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "teste",
+						"text": "Linha teste"
+					}					
+				},
+				{
+					"type": "custom",
+					"href": "/",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Linha teste",
+						"text": "Linha teste"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Linha teste",
+						"text": "Linha teste"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Linha Slim",
+						"text": "Linha Slim"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Linha teste",
+						"text": "Linha teste"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Promoções",
+						"text": "Promoções"
+					}
+				}
+			]
+		},
+		"title": "Menu horizontal"
+	}
+}

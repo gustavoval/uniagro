@@ -1,0 +1,14 @@
+{
+    "flex-layout.row#breadcrumb": {
+        "children": ["breadcrumb.search#plp"],
+        "props": {            
+            "blockClass": ["breadcrumb","wrap","wCol","bg-white"],
+            "showOnMobile": true
+        }
+    },
+    "breadcrumb.search#plp": {
+        "props": {
+          "showOnMobile": true
+        }
+    }
+}

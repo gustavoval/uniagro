@@ -1,0 +1,46 @@
+{
+    //share	
+	"flex-layout.row#share": {
+		"props": {
+			"blockClass":"row-share",
+			"preserveLayoutOnMobile":true
+		},
+		"children": [
+			"flex-layout.col#pdp-share"
+			//"flex-layout.col#pdp-wishlist"
+		]
+	},
+
+	"flex-layout.col#pdp-share":{
+		"props":{
+			"verticalAlign": "middle",
+			"horizontalAlign": "right"
+		},
+		"children":["share#default"]
+	},
+
+	"share#default": {
+		"props": {
+		  	"social": {
+				"Facebook": true,
+				"WhatsApp": true,
+				"Twitter": true,
+				"Pinterest": false
+		  	}
+		}
+	},
+
+	"flex-layout.col#pdp-wishlist":{
+		"props":{            
+			"verticalAlign": "middle",
+			"horizontalAlign": "right"
+        },
+		"children":["add-to-list-btn#pdp"]
+	},
+
+	"add-to-list-btn#pdp":{
+		"props":{
+		  	"blockClass": "wishlist-btn-pdp"
+		}
+	}
+}

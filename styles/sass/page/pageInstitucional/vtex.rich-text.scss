@@ -1,0 +1,86 @@
+
+
+.headingLevel1--i-cta {
+	font-size: 22px;		
+}
+.headingLevel2--i-cta {
+	margin: 0;
+	font-size: 18px;
+	padding: 20px 0 10px;
+	color: $primaryColor;
+}
+.headingLevel3--i-cta {
+	margin: 0;
+	font-size: 16px;
+	padding: 20px 0 10px;		
+}
+.paragraph--i-cta {	
+	color: #333;
+	font-size: 14px;
+	line-height: 21px !important;
+	margin: 0;
+	padding: 0 0 10px;
+}
+.link--i-cta {
+  	color: $primaryColor;
+}
+.strong--i-cta {
+    //color: $base;
+}
+:global(.vtex-store-components-3-x-imageElement--banner-institucional) {
+	margin: 0 0 15px;
+}
+
+
+//assinatura
+.paragraph--linha-funciona {
+	padding: 0;
+}
+.strong--linha-funciona {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid $border;
+	background-color: #fff;
+	color: $contrast;
+	font-size: 22px;
+	font-family: "Lobster",Helvetica,sans-serif;
+	margin: 0 auto;
+}
+.headingLevel3--linha-funciona {
+	color: $contrast;
+	font-size: 16px;
+}
+.wrapper--txt-small {
+	width: 460px;
+}
+
+.heading--txt-sobre {
+	font-family: "Lobster",Helvetica,sans-serif;
+    font-size: 30px;
+    margin: 20px 0 10px;
+    color: #3d3d3d;
+	font-weight: 400;
+	display: inline-block;
+
+	&::after {
+		content: "";
+		display: block;
+		height: 3px;
+		background-color: #006b4f;
+		margin: 3px 0 0;
+	}
+
+	&.headingLevel3--txt-sobre {
+		font-size: 24px;
+	}
+	
+}
+.paragraph--txt-sobre {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 10px;
+}

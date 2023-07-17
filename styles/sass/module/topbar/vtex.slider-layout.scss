@@ -1,0 +1,37 @@
+
+
+.sliderArrows--deals-topbar {    
+    border: none;
+}
+
+//EFFECT HOVER
+.sliderArrows--deals-topbar {  
+    &:hover {
+        transform: none;
+    }
+}
+
+
+// ARROW LEFT
+.sliderLeftArrow--deals-topbar{
+    left: 0;
+}
+
+//ARROW RIGHT
+.sliderRightArrow--deals-topbar{
+    right: 0;
+}
+.sliderLayoutContainer--deals-topbar {
+    padding-bottom: 0 !important;
+}
+
+//==========================================================================
+//   RESPONSIVE MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+    
+}
+
+
+
+

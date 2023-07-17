@@ -1,0 +1,20 @@
+{
+	// description
+	"flex-layout.row#description": {
+		"props": {			
+			"blockClass": ["short-description","card"]
+		},
+		"children": ["product-description#desc"]
+		//"children": ["tab-layout#home"]
+	},
+
+	"product-description#desc": {
+		"props": {
+			"showTitle": true,
+			"collapseContent": false,
+			"blockClass": ["short-description#desc"]
+		}
+	}
+
+	
+}

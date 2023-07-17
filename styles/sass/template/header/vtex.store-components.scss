@@ -1,0 +1,82 @@
+//logo
+.logoImage {
+    display: block;
+}
+.logoLink{  
+    display: flex;
+
+    .logoContainer{
+        padding: 0;         
+        min-width: inherit;
+        max-height: initial;
+        max-width: 130px;
+        width: 130px;        
+    }
+
+    .logoImage {        
+        width: 100%;
+        height: auto;
+    }
+}
+
+//links
+.imageElement--header-link {            
+    &.imageElement--tpl-1 {
+        width: 22px;
+        height: 22px;
+    }
+}
+.imageElementLink--header-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding: 0 5px;
+    column-gap: 8px;
+    row-gap: 5px;   
+    height: 38px;
+}
+
+//map
+.imageElementLink--icon-map {    
+    &::after {
+        content: "Onde encontrar";
+        display: block;        
+        font-size: 13px;        
+        line-height: 13px;        
+        color: #fff;
+        font-weight: $sSemibold;        
+    }    
+}
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+    //logo
+    .logoLink{  
+    
+        .logoContainer{          
+            max-width: inherit;
+            width: 78px;
+            padding: 0 0 0 5px;
+        }
+    
+        .logoImage {
+            width: 100%;
+            height: auto;            
+        }
+    }
+
+    //links
+    .imageElementLink--header-link {        
+        padding: 0;
+        &:hover {
+            background-color: transparent;
+        }
+    
+        &::after {        
+            display: none;
+        }
+        
+    }
+}

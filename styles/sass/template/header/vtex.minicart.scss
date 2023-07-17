@@ -1,0 +1,116 @@
+:global(.vtex-flex-layout-0-x-flexCol--tpl-1) {
+    .minicartContainer {
+        :global(.vtex-button){
+            :global(.vtex-button__label){
+                width: 38px;
+                height: 38px;
+
+                .minicartIconContainer{
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+        }
+    }
+}
+:global(.vtex-flex-layout-0-x-flexCol--tpl-2) {
+    .minicartContainer {
+        :global(.vtex-button){
+            :global(.vtex-button__label){
+                text-transform: none;
+                flex-direction: column;
+                row-gap: 5px;
+
+                .minicartIconContainer{
+                    width: 32px;
+                    height: 32px;
+                    border:2px solid #fff;
+                    border-radius: 50%;
+                    background-color: $primaryColor;
+                    background-size: 60%;
+
+                    .minicartQuantityBadge{ 
+                        top: 20px;
+                    }
+                }
+
+                &::after {
+                    content: "Meu carrinho";
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #fff;
+                    display: block;
+                    text-align: center;
+                    max-width: 48px;
+
+                }
+            }
+        }
+    }
+}
+.minicartContainer {
+
+    .openIconContainer{
+        padding: 0;
+    }
+
+    :global(.vtex-button){
+        background-color: transparent;
+        border:none;
+        
+        :global(.vtex-button__label){
+            padding: 0 !important;      
+                        
+    
+            .minicartIconContainer{
+                background-image: url("data:image/svg+xml,%3Csvg width='28' height='27' viewBox='0 0 28 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.66889 26.8799C7.93533 26.8799 7.30759 26.619 6.78566 26.097C6.26284 25.5742 6.00143 24.946 6.00143 24.2125C6.00143 23.4789 6.26284 22.8507 6.78566 22.3279C7.30759 21.806 7.93533 21.545 8.66889 21.545C9.40244 21.545 10.0302 21.806 10.5521 22.3279C11.0749 22.8507 11.3363 23.4789 11.3363 24.2125C11.3363 24.946 11.0749 25.5742 10.5521 26.097C10.0302 26.619 9.40244 26.8799 8.66889 26.8799ZM22.0062 26.8799C21.2726 26.8799 20.6449 26.619 20.123 26.097C19.6001 25.5742 19.3387 24.946 19.3387 24.2125C19.3387 23.4789 19.6001 22.8507 20.123 22.3279C20.6449 21.806 21.2726 21.545 22.0062 21.545C22.7397 21.545 23.3679 21.806 23.8908 22.3279C24.4127 22.8507 24.6737 23.4789 24.6737 24.2125C24.6737 24.946 24.4127 25.5742 23.8908 26.097C23.3679 26.619 22.7397 26.8799 22.0062 26.8799ZM7.53522 5.54024L10.7362 12.2089H20.0723L23.74 5.54024H7.53522ZM8.66889 20.2113C7.66859 20.2113 6.91281 19.772 6.40155 18.8936C5.89028 18.016 5.86805 17.1437 6.33486 16.2768L8.13539 13.0091L3.33396 2.87278H1.96689C1.589 2.87278 1.2778 2.74475 1.03328 2.48867C0.788762 2.23348 0.666504 1.91694 0.666504 1.53905C0.666504 1.16116 0.794542 0.844179 1.05062 0.588103C1.30581 0.332916 1.62234 0.205322 2.00023 0.205322H4.16755C4.41206 0.205322 4.64547 0.272009 4.86775 0.405382C5.09004 0.538755 5.25676 0.7277 5.3679 0.972217L6.26817 2.87278H25.9407C26.5409 2.87278 26.9521 3.09507 27.1744 3.53965C27.3967 3.98423 27.3856 4.45103 27.1411 4.94007L22.4063 13.4759C22.1618 13.9205 21.8395 14.2651 21.4394 14.5096C21.0392 14.7541 20.5835 14.8764 20.0723 14.8764H10.136L8.66889 17.5438H23.3733C23.7512 17.5438 24.0624 17.6714 24.3069 17.9266C24.5514 18.1827 24.6737 18.4997 24.6737 18.8775C24.6737 19.2554 24.5456 19.572 24.2895 19.8272C24.0344 20.0832 23.7178 20.2113 23.3399 20.2113H8.66889Z' fill='white'/%3E%3C/svg%3E");
+                //background-image: url("data:image/svg+xml,%3Csvg width='25' height='21' viewBox='0 0 25 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.817505 0.816345H5.17842L7.66871 12.8075C7.66871 12.8075 7.73068 13.0625 7.7423 13.1205C8.31162 16.2275 9.90726 16.8999 11.5416 16.8999H20.368' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22.4052 18.7123C22.4052 19.7093 21.5958 20.5208 20.5927 20.5208C19.5896 20.5208 18.7802 19.7131 18.7802 18.7123C18.7802 17.7114 19.5896 16.9037 20.5927 16.9037C21.5958 16.9037 22.4052 17.7114 22.4052 18.7123Z' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10'/%3E%3Cpath d='M6.0304 4.19769L24.5159 5.43429L22.1069 12.8539L7.79645 12.85' stroke='%23ffffff' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M12.1652 18.7123C12.1652 19.7093 11.3519 20.5208 10.3527 20.5208C9.35348 20.5208 8.54016 19.7131 8.54016 18.7123C8.54016 17.7114 9.3496 16.9037 10.3527 16.9037C11.3558 16.9037 12.1652 17.7114 12.1652 18.7123Z' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                position: initial;
+        
+                .cartIcon{
+                    display: none;
+                }
+                
+                .minicartQuantityBadge{
+                    height: 18px;
+                    width: 18px;
+                    top: 0;
+                    right: 0;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    font-size: 10px;
+                    line-height: 0;
+                    background: #fff;
+                    color: $primaryColor
+                    ;
+                    font-weight: $sBold;
+                                        
+                }
+            
+            }
+        }
+    }
+}
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+    :global(.vtex-flex-layout-0-x-flexCol--tpl-2) {
+        .minicartContainer {
+            :global(.vtex-button){
+                :global(.vtex-button__label){
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

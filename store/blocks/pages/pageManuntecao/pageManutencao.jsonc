@@ -1,0 +1,56 @@
+{
+	"store.custom#template-manutencao": {
+		"blocks": [
+			"flex-layout.row#manutencao-wrap"
+		]
+	},
+	"flex-layout.row#manutencao-wrap":{
+		"children":[      
+            "flex-layout.col#manutencao-content"
+		],
+		"props":{
+			//"fullWidth":true,
+			"paddingTop":"6",
+			"blockClass":["wrap"]
+		}
+	},
+
+    "flex-layout.col#manutencao-content":{
+		"children":[
+			"image#manutencao-banner",
+            "rich-text#manutencao-title",
+            "rich-text#manutencao-text"
+		],
+        "props":{
+            "width": "100%",
+            "horizontalAlign": "center"
+        },
+		"title": "Content"
+	},
+
+	"image#manutencao-banner":{
+		"props":{
+			"blockClass":["img-icon"],
+			"src": "assets/manutencao.png"
+		},
+		"title": "Banner"
+	},
+
+	"rich-text#manutencao-title": {
+		"props": {
+			"textAlignment": "CENTER",			
+			"text": "# PÁGINA EM MANUTENÇÃO",
+			"blockClass": "text-manutencao"
+		},
+        "title": "Title"
+	},
+
+    "rich-text#manutencao-text": {
+		"props": {
+			"textAlignment": "CENTER",			
+			"text": "Estamos trabalhando o conteúdo para melhor atendê-lo!",
+			"blockClass": "text-manutencao"
+		},
+        "title": "Text"
+	}
+}

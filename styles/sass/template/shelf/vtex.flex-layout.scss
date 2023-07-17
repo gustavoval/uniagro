@@ -1,0 +1,44 @@
+
+
+//action
+.flexRow--summary-actions {
+    padding: 5px 0;
+
+	:global(.vtex-button){				
+		width: 100%;   
+		border-radius: $radius;
+		min-width: inherit;
+		min-height: inherit;
+
+		:global(.vtex-button__label){
+			padding: 0 !important;            
+			height: 36px;
+			font-size: 13px;
+			font-weight: $sBold;
+		}           
+	}
+}
+
+//==========================================================================
+//   RESPONSIVO TABLET
+//==========================================================================
+@media(max-width: $screen-tb) {
+	
+}
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+	.flexRow--summary-actions {
+	
+		:global(.vtex-button){
+			:global(.vtex-button__label){				
+				height: 30px;
+				font-size: 13px;				
+			}           
+		}
+	}
+}
+
+   

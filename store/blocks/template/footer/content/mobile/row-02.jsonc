@@ -1,0 +1,16 @@
+{
+  /*
+  "flex-layout.row#mobile-footer-row-02": {
+    "children": [         
+      "flex-layout.row#ft-nav",   
+      "flex-layout.col#ft-payment",
+      "flex-layout.col#ft-powered"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      "preventHorizontalStretch": true,
+      "blockClass": ["footer-row-02","centralizer"]
+    }
+  }
+  */
+}

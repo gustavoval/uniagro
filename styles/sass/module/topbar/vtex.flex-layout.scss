@@ -1,0 +1,22 @@
+
+
+//slider
+.flexRow--slider-topbar {
+    padding: 0;
+    width: 540px; 
+    margin: 0 auto;
+}
+.flexRowContent--slider-topbar {
+    height: 40px;
+}
+
+@media(max-width: $screen-mb) {
+    .flexRow--slider-topbar {
+        width: 100%;
+        max-width: 340px;
+    }
+    .flexRowContent--slider-topbar {
+        
+        height: 32px;
+    }
+}

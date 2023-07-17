@@ -1,0 +1,44 @@
+
+
+//==========================================================================
+//   SHELF
+//==========================================================================
+.productHighlightWrapper--collection {	
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	
+	.productHighlightText {
+		background: $secondaryColor;
+		border-radius: 10px;
+		padding: 3px 8px;
+		font-size: 12px;
+        font-weight: $sSemibold;
+		color: $primaryColor;		
+	}
+
+	.productHighlightWrapper--pdp {
+		top: auto;
+		margin-bottom: 10px;
+	}
+}
+
+//==========================================================================
+//   PDP
+//==========================================================================
+:global(.vtex-flex-layout-0-x-flexRow--row-main-pdp) {
+	.productHighlightWrapper--collection {
+	  	top: auto;
+	  	margin-bottom: 10px;
+	}
+}
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+	
+}
+
+
+

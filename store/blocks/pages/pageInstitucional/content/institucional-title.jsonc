@@ -1,0 +1,9 @@
+{
+    "rich-text#institucional-title": {
+		"props": {
+			"textAlignment": "LEFT",			
+			"text": "# QUEM SOMOS",
+			"blockClass": "i-cta"
+		}
+	}
+}

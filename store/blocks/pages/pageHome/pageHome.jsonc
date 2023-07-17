@@ -1,0 +1,62 @@
+{
+	"store.product": {
+		"blocks": [
+		  	"responsive-layout.desktop",      
+		  	"responsive-layout.phone"
+		]
+	},
+
+	//DESKTOP
+	"responsive-layout.desktop": {
+		"children": [
+			"flex-layout.row#product-breadcrumb",      
+			"condition-layout.product#availability",
+			"__fold__.experimentalLazyAssets",
+			"flex-layout.row#crosseling"
+		]
+	},
+
+	//MOBILE
+	"responsive-layout.phone": {
+		"children": [
+			"flex-layout.row#product-breadcrumb",      
+			//"condition-layout.product#availabilitymobile",
+			"__fold__.experimentalLazyAssets"
+			//"flex-layout.row#product-last"
+		]
+	},
+
+	"store.home": {
+		"blocks": [						
+			"flex-layout.row#full-banner",			
+			"flex-layout.row#title-shelf-01",
+			"flex-layout.row#collection-shelf-01",
+			//"flex-layout.row#horizontal-banner-01",			
+			"responsive-layout.desktop#horizontal-banner-01-desktop",
+			"responsive-layout.phone#horizontal-banner-01-mobile",
+			"flex-layout.row#title-nav-departament",
+			"flex-layout.row#post-nav-departament",						
+			"flex-layout.row#collection-shelf-02",
+			//"__fold__.experimentalLazyAssets",						
+			"flex-layout.row#mini-banners-col-02",
+			"flex-layout.row#r2-mini-banners-col-02",
+			"flex-layout.row#title-shelf-03",
+			"flex-layout.row#collection-shelf-03",
+			"flex-layout.row#title-post-html-03",
+			"flex-layout.row#post-html-03",
+			"flex-layout.row#title-mini-banners-col-05",
+			"flex-layout.row#mini-banners-col-05"
+		]
+	},
+
+	"responsive-layout.desktop#horizontal-banner-01-desktop": {
+		"children": [
+			"flex-layout.row#horizontal-banner-01"
+		]
+	},
+	"responsive-layout.phone#horizontal-banner-01-mobile": {
+		"children": [
+			"flex-layout.row#horizontal-banner-01-mobile"
+		]
+	}
+}

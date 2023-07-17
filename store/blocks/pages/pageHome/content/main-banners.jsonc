@@ -1,0 +1,85 @@
+/*
+FULL MAIN BANNERS SLIDER + TV BANNER
+*/
+{
+    
+    //layout
+    
+    "flex-layout.row#main-banners": {
+        "children": [            
+            "flex-layout.col#col-main-banner-01",
+            "flex-layout.col#col-main-banner-02"
+        ],
+        "props":{            
+            "paddingTop": "6",
+            "blockClass": ["wrap","wCol"]
+        },
+        "title": "Row - Main Banners"
+    },
+
+    //content
+    "flex-layout.col#col-main-banner-01":{  
+        "children":[
+            "list-context.image-list#full-slider-banners"
+        ],
+        "props":{            
+            "width":"66%",
+            "blockClass":["main-banners"]
+        }
+    },
+
+    "list-context.image-list#full-slider-banners": {
+        "children": ["slider-layout#banner-slider"], // folder sliders
+        "props": {             
+            "images": [{
+                "image": "assets/banners/home/dev/main-banner.jpg",                
+                "mobileImage": "assets/banners/home/dev/full-banner-mobile.jpg",
+                "href": {
+                    "url": "/"
+                }
+            },
+            {
+                "image": "assets/banners/home/dev/main-banner.jpg",                
+                "mobileImage": "assets/banners/home/dev/full-banner-mobile.jpg",
+                "href": {
+                    "url": "/"
+                }
+            }]
+        }
+    },
+
+    "flex-layout.col#col-main-banner-02":{
+        "children":[
+            "image#row-main-banners-02-01",
+            "image#row-main-banners-02-02"
+        ],
+        "props":{
+
+            "blockClass":["vertical-banners", "vCol"],
+            "width": "33%",
+            "preventVerticalStrech": true,
+            "rowGap": "4"
+        }
+    },
+
+    "image#row-main-banners-02-01":{
+        "props":{
+            "blockClass": "banner",
+            "src":"assets/banners/home/dev/main-vertical-banner.jpg",                         
+            "link":{
+                "url":"/"
+            }
+        }
+    },
+
+    "image#row-main-banners-02-02":{
+        "props":{
+            "blockClass": "banner",
+            "src":"assets/banners/home/dev/main-vertical-banner.jpg",             
+            "link":{
+                "url":"/"
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,96 @@
+/*post*/
+.flexRowContent--nav-departament,
+.flexRowContent--post-03,
+.flexRowContent--blog {
+    .flexColChild {
+        width: 100%;
+    } 
+}
+
+.flexRow--video-banner {
+    padding: 30px 0;
+    //background-color: $light;
+    margin: 20px 0;
+}
+.flexRowContent--video-banner {    
+    padding: 0;    
+    column-gap: 40px;
+}
+.flexRowContent--insta {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flexRowContent--nav-departament {
+    max-width: 960px;
+    margin: 0 auto;
+
+    :global(.vtex-store-components-3-x-imageElement) {
+        margin: 0 auto;
+    }    
+    .flexCol--box {
+        border-radius: $radius;
+        padding: 10px 10px 15px;
+        background-color: $light;        
+    }
+}
+@media(min-width: 1024px) {
+    .flexRowContent--group-shelf {
+        padding-left: 60px;
+        padding-right: 60px;
+
+        :global(.vtex-slider-layout-0-x-sliderLeftArrow) {
+            left: -35px;
+        }
+        :global(.vtex-slider-layout-0-x-sliderRightArrow) {
+            right: -35px;
+        }
+    }
+    
+    
+}
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {    
+    .flexCol--main-banners {
+        padding-bottom: 10px;
+    }
+    .flexRowContent--banner-no-slider {
+        .flexCol {
+            padding-top: 10px;
+        }
+    }
+
+    .flexRowContent--nav-departament {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+    .flexRowContent--no-slider {
+		display: flex !important;
+		flex-direction: column;
+		row-gap: 10px;
+	}
+    .flexRow--no-slider {
+        :global(.vtex-store-components-3-x-container) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        :global(.vtex-store-components-3-x-imageElement--rd) {
+            border-radius: 0 !important;
+        }
+    }
+
+    .flexRowContent--insta {
+        :global(.vtex-slider-layout-0-x-sliderTrack--wCol) {
+            column-gap: 0;
+        }
+    }
+    
+}
+
+
+
+

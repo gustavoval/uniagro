@@ -1,0 +1,395 @@
+{
+	
+
+	//title
+	"rich-text#footer-title-00":{
+		"props":{
+			"text":"**Linhas**",
+			"blockClass":"footer-title"
+		}
+	},
+
+	//menu
+	"vtex.menu@2.x:menu#menu00-footer-2": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": ["menu-footer"],
+			"items":[
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/azeites-e-oloes",
+						"noFollow": false,
+						"tagTitle": "Azeites e Óleos",
+						"text": "Azeites e Óleos"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/vinagres-e-balsamicos",
+						"noFollow": false,
+						"tagTitle": "Vinagres e Balsâmicos",
+						"text": "Vinagres e Balsâmicos"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/condimentos",
+						"noFollow": false,
+						"tagTitle": "Molhos e Atomatados",
+						"text": "Molhos e Atomatados"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/conservas",
+						"noFollow": false,
+						"tagTitle": "Conservas e Condimentos",
+						"text": "Conservas e Condimentos"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/salgadinhos",
+						"noFollow": false,
+						"tagTitle": "Snaks",
+						"text": "Snaks"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/frutas-secas",
+						"noFollow": false,
+						"tagTitle": "Frutas secas",
+						"text": "Frutas secas"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/nuts",
+						"noFollow": false,
+						"tagTitle": "Nuts",
+						"text": "Nuts"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/granolas",
+						"noFollow": false,
+						"tagTitle": "Granolas",
+						"text": "Granolas"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/organicos",
+						"noFollow": false,
+						"tagTitle": "Orgânicos",
+						"text": "Orgânicos"
+					}
+				}
+			]
+		}
+	},
+
+	//title
+	"rich-text#footer-title-01":{
+		"props":{
+			"text":"**Institucional**",
+			"blockClass":"footer-title"
+		}
+	},
+
+	//menu
+	"vtex.menu@2.x:menu#menu01-footer": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": ["menu-footer"],
+			"items":[
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/quem-somos",
+						"noFollow": false,
+						"tagTitle": "Quem somos",
+						"text": "Quem somos"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/receitas",
+						"noFollow": false,
+						"tagTitle": "receitas",
+						"text": "Receitas"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "external",
+						"href": "https://br.linkedin.com/company/selecionadosuniagro",
+						"noFollow": false,
+						"tagTitle": "Trabalhe conosco",
+						"text": "Trabalhe conosco"
+					}
+				}
+				
+			]
+		}
+	},
+
+
+	//title
+	"rich-text#footer-title-02":{
+		"props":{
+			"text":"**Suporte**",
+			"blockClass":"footer-title"
+		}
+	},
+
+	//menu
+	"vtex.menu@2.x:menu#menu02-footer": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": ["menu-footer"],
+			"items":[
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/trocas-devolucoes",
+						"noFollow": false,
+						"tagTitle": "Trocas e Devoluções",
+						"text": "Trocas e Devoluções"
+					}
+				},
+				
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/politica-de-entrega",
+						"noFollow": false,
+						"tagTitle": "Política de entrega",
+						"text": "Política de entrega"
+					}
+				},
+
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/politica-de-privacidade",
+						"noFollow": false,
+						"tagTitle": "Política de privacidade",
+						"text": "Política de privacidade"
+					}
+				}
+			]
+		}
+	},
+
+
+
+	//title
+	"rich-text#footer-title-03":{
+		"props":{
+			"text":"**Linhas**",
+			"blockClass":"footer-title"
+		}
+	},
+
+	"vtex.menu@2.x:menu#menu03-footer": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": ["menu-footer"],
+			"items":[
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "#!",
+						"noFollow": false,
+						"tagTitle": "Linha Equilíbrio",
+						"text": "Linha Equilíbrio"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "#!",
+						"noFollow": false,
+						"tagTitle": "Linha Gourmet",
+						"text": "Linha Gourmet"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "#!",
+						"noFollow": false,
+						"tagTitle": "Linha Monde",
+						"text": "Linha Monde"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "#!",
+						"noFollow": false,
+						"tagTitle": "Linha Feliz",
+						"text": "Linha Feliz"
+					}
+				}
+			]
+		}
+	},
+
+	
+
+	//title
+	"rich-text#footer-title-04":{
+		"props":{
+			"text":"**Contato**",
+			"blockClass":"footer-title"
+		}
+	},
+
+	"rich-text#phone-footer":{
+		"props":{
+			"text":"[Tel: (51) 99873.5676](tel:+5551998735676) \n\n [WhatsApp: (51) 99873.5676](tel:+5551998735676)",
+			"blockClass":["footer-phone","ftc"]
+		}
+	},
+	
+
+	"rich-text#email-footer":{
+		"props":{
+			"text":"[contato@uniagro-ind.com.br](mailto:contato@uniagro-ind.com.br)",
+			"blockClass":["footer-email","ftc"]
+		}
+	},
+
+	"rich-text#atendimento-footer":{
+		"props":{
+			"text":"Segunda à sexta-feira, das 9:00 às 18:00 horas",
+			"blockClass":["footer-contact","ftc"]
+		}
+	},
+
+
+	//title
+	"rich-text#footer-title-05":{
+		"props":{
+			"text":"**Minha conta**",
+			"blockClass":"footer-title"
+		}
+	},
+
+	//menu
+	"vtex.menu@2.x:menu#menu05-footer": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": ["menu-footer"],
+			"items":[
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/account",
+						"noFollow": false,
+						"tagTitle": "Meus Dados",
+						"text": "Meus Dados"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/account#orders",
+						"noFollow": false,
+						"tagTitle": "Meus Pedidos",
+						"text": "Meus Pedidos"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/account#wishlist",
+						"noFollow": false,
+						"tagTitle": "Meus Favoritos",
+						"text": "Meus Favoritos"
+					}
+				}
+			]
+		}
+	}
+}

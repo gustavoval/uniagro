@@ -1,0 +1,84 @@
+
+
+//success menssage
+.defaultSuccessMessage {
+	text-align: center;	
+	margin: 10px 0 0;
+	padding: 0;
+	font-weight: $sBold;	
+	color: $primaryColor;
+
+	&::after {
+		content: "Seu cadastro foi realizado com sucesso";
+		display: block;		
+		font-size: 14px;
+		line-height: 18px;		
+	}
+}
+
+.newsletterForm {
+	position: relative;	
+	display: flex;
+	column-gap: 10px;
+	max-width: 640px;
+	
+	//error message
+	:global(.vtex-input__error) {
+		top: 100%;
+		position: absolute;
+		margin-top: 3px;
+		font-size: 11px;
+		font-weight: $sBold;
+		color: #fff;
+	}
+	.nameInputContainer,
+	.emailInputContainer {
+		width: 42%;
+	}
+	
+	//input
+	:global(.vtex-styleguide-9-x-input),
+	:global(.vtex-input-prefix__group) {
+		border:none;		
+		border-radius: $radius;		
+	}
+	
+	.formSubmitContainer{
+		width: 16%;
+		:global(.vtex-button){
+			width: 100%;
+			border:none;			
+			font-size: 13px;			
+			background-color: #fff;
+			border-radius: $radius;
+
+		}
+		:global(.vtex-button__label) {			
+			text-transform: uppercase;
+			font-weight: $sBold;
+			color: $primaryColor;
+		}
+	}
+}
+
+
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-tb) {
+	.newsletterForm {
+		padding: 15px 20px 0;
+		flex-direction: column;
+		row-gap: 10px;
+		.nameInputContainer,
+		.emailInputContainer {
+			width: 100%;
+		}
+		.formSubmitContainer{
+			width: 140px;
+			margin: 0 auto;
+		}
+	}
+}
+

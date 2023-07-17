@@ -1,0 +1,27 @@
+{
+  	"flex-layout.row#mobile-search":{
+		"children":["search-bar#desktop"],
+		"props":{
+			"blockClass":["header-mobile-search"],
+			"width":"grow"
+		},
+		"title":"Busca"
+  	},
+  	
+	"search-bar#mobile": {
+		"blocks": ["autocomplete-result-list.v2#mobile"],
+		"props": {
+			"openAutocompleteOnFocus": true
+		},
+		"title": "Mobile - Search bar"
+  	},
+
+	"autocomplete-result-list.v2#mobile": {
+		"blocks": ["product-summary.shelf"],
+		"props":{
+			"autocompleteWidth": 100,
+			"productLayout": "HORIZONTAL",
+			"__unstableProductOriginVtex":true
+		}
+	}
+}

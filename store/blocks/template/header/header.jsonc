@@ -1,0 +1,97 @@
+{
+  	"header":{
+    	"blocks":[
+			"header-layout.desktop",
+			"header-layout.mobile"
+    	]
+  	},
+	"header.full": {
+		"blocks":[
+			"header-layout.desktop",
+			"header-layout.mobile"
+		]
+	},
+
+	//desktop
+	"header-layout.desktop":{
+		"children":[      
+			"add-head",			
+			"consent-lgpd",		
+			"flex-layout.row#topbar",	
+			"sticky-layout#desktop-header"
+		],
+		"title":"Header: Desktop"
+	},
+
+	//row content sticky
+	"sticky-layout#desktop-header":{
+		"children":[    			  
+		  "flex-layout.row#desktop-content-header",
+		  "flex-layout.row#desktop-menu"
+		],
+		"props":{
+		  "blockClass":"sticky-header"
+		}
+	},
+
+	"flex-layout.row#desktop-content-header":{
+		"children":[
+			"flex-layout.col#logo",				
+			"flex-layout.col#search-desktop",
+			"flex-layout.col#login",			
+			"flex-layout.col#link-map",
+			"flex-layout.col#link-wishlist",
+			"flex-layout.col#minicart"
+		],
+		"props":{
+			"blockClass":["wrap","wCol","row-header","desktop-header"],
+			"preventHorizontalStretch":true
+		},
+		"title":"Conteúdo"
+	},
+	
+
+	//MOBILE
+	"header-layout.mobile":{
+		"children":[			
+			//"flex-layout.row#topbar",
+			"sticky-layout#mobile-header",
+			"flex-layout.row#mobile-search",
+			"add-head",
+			"consent-lgpd"
+		],
+		"title":"Header: Mobile"
+	},
+
+	//content sticky
+	"sticky-layout#mobile-header":{
+		"children":[      
+			"flex-layout.row#mobile-content-header"
+		],
+		"props":{
+			"blockClass":"sticky-header"
+		},
+		"title":"Conteúdo"
+	},
+  
+	"flex-layout.row#mobile-content-header":{
+		"children":[			
+			"flex-layout.col#logo",  			
+			"flex-layout.col#spacer",    			
+			"flex-layout.col#minicart",
+			"flex-layout.col#button-open-menu"
+		],
+		"props":{
+			"blockClass":["wrap","wCol","mobile-content-header"],
+			"preventHorizontalStretch":true,
+			"preserveLayoutOnMobile": true
+		}
+	},
+
+	//column spacer
+	"flex-layout.col#spacer":{
+		"props":{
+		 	"width":"grow"
+		}
+	}
+}

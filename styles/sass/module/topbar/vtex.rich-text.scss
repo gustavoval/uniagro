@@ -1,0 +1,19 @@
+
+
+//topbar column
+.paragraph--sd-topbar {
+    font-size: 14px;
+    font-weight: $sBold;
+}
+.strong--sd-topbar {
+    color: $primaryColor;
+}
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+    .paragraph--sd-topbar {
+        font-size: 11px;
+    }
+}

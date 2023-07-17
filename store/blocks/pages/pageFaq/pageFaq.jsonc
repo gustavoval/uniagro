@@ -1,0 +1,17 @@
+{
+	"store.custom#template-faq": {
+		"blocks": [
+			"flex-layout.row#faq-wrap"
+		]
+	},
+	"flex-layout.row#faq-wrap":{
+		"children":[      
+			
+		],
+		"props":{
+			//"fullWidth":true,
+			"paddingTop":"6",
+			"blockClass":["wrap","wCol"]
+		}
+	}
+}

@@ -1,0 +1,83 @@
+
+
+//off
+.savings--productPercentage {    
+    font-size: 13px;
+    padding: 0 6px;
+    border-radius: $radius 0 $radius 0;
+    font-weight: $sSemibold;
+    color: #fff !important;
+    background-color: $contrast;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--info-product) {
+    //preco de
+    .listPrice {
+        color: $text;
+        display: block;                               
+        font-size: 14px;  
+        padding-left: 2px;      
+    }
+    //off
+    .savings {
+        font-size: 11px;
+        color: $primaryColor;
+        text-transform: lowercase; 
+        display: flex;
+        height: 20px;       
+        align-items: center;
+    
+        .currencyCode {
+            //text-transform: none;
+        }
+    }
+    // preco por
+    .sellingPriceValue{        
+        display: block; 
+        color: $primaryColor;       
+        line-height: 1;        
+        font-size: 30px;        
+        font-weight: $sBold;
+    }
+    
+    //parcelamento
+    .installments{
+        font-size: 16px;
+        line-height: 1;                
+        display: block;
+        text-align: left;  
+        padding-top: 8px;          
+        
+        .installmentValue {
+            font-weight: $sBold;            
+            display: inline-block;
+            &::after {
+                content: " sem juros";
+                //font-weight: $sSemibold;            
+            }
+        }
+    }
+}
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+    :global(.vtex-flex-layout-0-x-flexColChild--info-product) {
+        //preco de
+        .listPrice {
+            font-size: 12px;          
+        }
+        
+        // preco por
+        .sellingPriceValue{
+            font-size: 24px;
+            
+        }
+        
+        //parcelamento
+        .installments{
+            font-size: 13px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.lista-receitas {
+    margin: 0;
+}
+.boxReceitas { display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;grid-gap: 16px;}
+.boxReceitas div { padding: 8px; border-radius: 4px; height: 100%; border:1px solid #ddd;}
+.boxReceitas img { display: block; width: 100%; height: auto;}
+.boxReceitas h3 { margin: 15px 0 0; color: #006B4F;font-weight: 700;font-size: 16px;line-height: 22px;}
+.boxReceitas a { text-decoration: none;}
+.boxReceitas p {font-size: 14px;
+    line-height: 24px; margin: 5px 0 20px;}
+
+@media(max-width: 640px) {
+    
+}

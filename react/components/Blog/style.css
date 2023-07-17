@@ -1,0 +1,27 @@
+/*list*/
+.wrapPost {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-right: 40px;
+    max-width: 1380px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.dadosPost {
+    padding: 20px;
+    background-color: #f1f1f1;
+    column-gap: 40px;
+    margin-top: 20px;
+}
+.titlePost { margin-bottom: 20px;}
+.titlePost p { font-size: 14px; line-height: 18px;}
+.dadosPost ul {
+    padding: 0  0 0 10px;
+    margin: 0 0 30px;
+}
+.dadosPost li { list-style: 17px; font-size: 14px;}
+
+@media(max-width: 640px) {
+    .dadosPost { flex-direction: column; row-gap: 20px;}
+}

@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#text-atendimento": {
+		"props":{
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile":true,
+			"colGap": "4",
+			"blockClass":"txt-pdp"
+		},
+		"children":[			
+			"flex-layout.col#img-atendimento",
+			"flex-layout.col#text-atendimento"
+			
+		]
+	},
+
+	"flex-layout.col#img-atendimento":{
+        "children":["image#img-atendimento"],
+        "props":{            
+			"verticalAlign": "middle"
+        }
+    },
+
+	"image#img-atendimento":{
+		"props":{
+			"src":"assets/icons/common/help.svg",
+			"blockClass":["icon-pdp-help"]
+		}
+	},
+
+
+	"flex-layout.col#text-atendimento":{
+        "children":["rich-text#text-atendimento"],
+        "props":{            
+			"verticalAlign": "middle"
+        }
+    },
+
+    "rich-text#text-atendimento": {
+		"props": {
+			"blockClass":"text-pdp",
+			"textAlignment": "LEFT",
+			"text": "**Alguma dúvida com esse produto?** \n\n Fale com a gente: email@email.com.br"
+		}
+	}
+}

@@ -1,0 +1,68 @@
+{
+	//title
+	"rich-text#footer-title-social":{
+		"props":{
+			"text":"**Siga a gente**",
+			"blockClass":"footer-title"
+		}
+	},
+
+	"flex-layout.row#social-network": {
+		"props":{
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"blockClass":"social-footer"
+		},
+		"children": [
+			"image#footer-social-1",			
+			//"image#footer-social-2",			
+			"image#footer-social-3",
+			"image#footer-social-4"
+		]
+	},
+
+	"image#footer-social-1":{
+		"props": {
+			"src":"assets/icons/social/facebook.jpg",
+			"blockClass":"logo-footer",
+			"link":{
+                "url":"https://www.facebook.com/SelecionadosUniagro"
+            }
+		}
+	},
+
+	/*
+	"image#footer-social-2":{
+		"props": {
+			"src":"assets/icons/social/twitter.jpg",
+			"blockClass":"logo-footer",
+			"link":{
+                "url":"https://twitter.com/"
+            }
+		}
+	},
+	*/
+
+	"image#footer-social-3":{
+		"props": {
+			"src":"assets/icons/social/instagram.jpg",
+			"blockClass":"logo-footer",
+			"link":{
+                "url":"https://www.instagram.com/selecionadosuniagro/"
+            }
+		}
+	},
+
+	"image#footer-social-4":{
+		"props": {
+			"src":"assets/icons/social/youtube.jpg",
+			"blockClass":"logo-footer",
+			"link":{
+                "url":"https://www.youtube.com/channel/UCl_G_lbdCfphwY3kBVZaddg"
+            }
+		}
+	}
+
+	
+	
+}

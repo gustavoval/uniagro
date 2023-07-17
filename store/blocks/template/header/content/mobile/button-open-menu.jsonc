@@ -1,0 +1,11 @@
+{
+    
+    //col
+    "flex-layout.col#button-open-menu":{
+        "children":["drawer#menu-drawer"],
+        "props":{
+            "blockClass":["btn-menu-mb"],
+            "verticalAlign": "middle"
+        }
+    }
+}

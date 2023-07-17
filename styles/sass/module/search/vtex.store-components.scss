@@ -1,0 +1,65 @@
+.searchBarContainer {
+    padding: 0;
+    max-width: initial; 
+
+    :global(.vtex-input-prefix__group){
+        border-color: #fff;
+        margin-top: 0;
+        border:none;
+        height: 38px;
+        border-radius: $radius;
+        //border-radius: 0;    
+        //border-radius: 38px;
+        
+        //input text
+        :global(.vtex-styleguide-9-x-input) {
+            
+            //border-radius: 0;
+
+            @media(max-width: 640px){
+                font-size: 16px;
+            }
+        }
+
+        //button
+        :global(.vtex-input__suffix){
+            padding: 0;
+
+            .searchBarIcon--clear {
+                .closeIcon {
+                    border-radius: 50%;
+                    background: $border;
+                    padding: 2px;
+                }
+            }
+            
+            .externalSearchButtonWrapper {
+                //background-color: $primaryColor;
+                position: relative;                
+                width: 52px;
+                border:none;
+
+                &::before {
+                    content: "";
+                    height: 26px;
+                    width: 1px;
+                    background-color: $border;
+                    position: absolute;
+                    left: 0;
+                    top: 6px;
+                }
+            }
+            
+
+            .searchBarIcon--external-search {
+                padding: 0 16px;         
+                background-color: #fff;
+                .searchIcon {           
+                    fill: $primaryColor;         
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}

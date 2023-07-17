@@ -1,0 +1,17 @@
+{
+  "flex-layout.row#text-seo-plp":{
+      "children":["rich-text#text-seo-plp"],
+      "props":{
+          "blockClass":["wrap","text-seo-plp"]
+      },
+      "title": "SEO Text"
+    },
+  
+    "rich-text#text-seo-plp":{
+      "props":{
+          "text":"## Lorem Ipsum \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem.",
+          "blockClass":"plp-seo-text"
+      },
+      "title":"SEO Text"
+  }
+}

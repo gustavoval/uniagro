@@ -1,0 +1,40 @@
+.consentLgpd {
+    position: fixed;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    z-index: 99999999999;    
+}
+.wrapLgpd {
+    display: flex;
+    column-gap: 60px;
+    align-items: center;
+    background: #fff;    
+    line-height: 160%;
+    margin: 0 auto;
+    border: none;    
+    width: 90%;
+    padding: 24px;
+    max-width: 1300px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+}
+.wrapLgpd p {
+    font-size: 13px;
+    color: #333;
+}
+.wrapLgpd button {
+    display: flex;
+    border-radius: 6px;
+    border: none;
+    background: #42b4e6;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    line-height: 1;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+
+}

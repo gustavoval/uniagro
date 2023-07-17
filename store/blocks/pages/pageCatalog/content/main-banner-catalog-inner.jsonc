@@ -1,0 +1,21 @@
+{
+	"flex-layout.row#main-banners-catalog-inner": {
+		"children": [
+			"image#full-banner-category-inner"
+		],
+		"props":{ 
+            "blockClass":"banner-inner",     
+			"fullWidth": true
+		}
+	},
+
+    "image#full-banner-category-inner":{
+        "props":{
+			"blockClass":["banner","rd"],				
+            "src":"assets/banners/catalog/full-catalog-inner2.jpg",
+            "link":{
+                "url":"/"
+            }
+        }
+    }
+}

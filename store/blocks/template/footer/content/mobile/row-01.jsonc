@@ -1,0 +1,23 @@
+{
+  /*
+  "flex-layout.row#mobile-footer-row-01":{
+    "children":[
+      "flex-layout.col#ft-newsletter"
+      
+    ],
+    "props":{
+      "blockClass":["wrap","mobile-footer-row-01"]
+    }
+  },
+
+  "flex-layout.row#ft-nav":{
+    "children":[
+      "flex-layout.col#ft-nav-institucional",
+      "flex-layout.col#ft-nav-support"
+    ],
+    "props":{
+      "blockClass":["ft-nav-mobile"]
+    }
+  }
+  */
+}

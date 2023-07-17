@@ -1,0 +1,420 @@
+
+:global(.vtex-flex-layout-0-x-flexCol--right-pdp) {	
+	
+}
+
+.searchResultContainer{
+  	padding: 0;
+}
+
+.searchResultContainer {
+	padding: 0;
+	margin: 0!important;
+	width: 100%!important;
+	max-width: initial;
+}
+
+//leftbar
+.filtersWrapper {
+	
+	//filtrado por
+	.filter__container--selectedFilters,
+	.filter__container--title {
+		display: none;
+	}
+
+	//title
+	.filterTitleSpan {
+        font-weight: $sBold;
+        font-size: 13px;
+    }
+
+	//show more
+	.seeMoreButton {
+		padding: 6px 0;
+		background: transparent;
+		font-size: 14px;
+		text-decoration: underline;
+		font-weight: $sBold;
+	}
+  
+  	.filter__container{
+      padding-bottom: 10px;    
+      margin-bottom: 10px;
+      border-color: $border;
+
+      .filter {
+        padding: 0;
+      }
+
+      .filterTitle{      
+      //border-top: 1px solid $border;
+      padding: 15px 0;
+
+      .filterIcon {
+        padding: 0;
+        opacity: .5;
+      }
+
+      &:hover {
+        .filterIcon {
+          opacity: 1;
+        }
+      }
+    }
+
+    .filterTemplateOverflow {
+		padding: 0;
+		max-height: 226px !important;
+
+		&::-webkit-scrollbar-track {background-color: $light; border-radius: 6px;}
+		&::-webkit-scrollbar {width: 6px;background: #ccc; border-radius: 6px;}
+		&::-webkit-scrollbar-thumb {background: #ccc; border-radius: 6px;} 
+
+		//price
+		:global(.vtex-slider__left-value) {
+			margin-right: auto;
+		}
+		:global(.vtex-slider__dash) {
+			display: none;
+		}
+			
+		:global(.vtex-checkbox__line-container) {
+			padding: 6px 0;
+			align-items: center;
+		}
+
+		:global(.vtex-checkbox__label) {		
+			font-size: 12px;
+			line-height: 1;
+      color: #000;
+		}
+
+		:global(.vtex-checkbox__inner-container) {
+			border-width: 1px;
+		}
+    }
+  }
+}
+
+
+//title
+.galleryTitle--layout{
+	margin: 0 0 10px;
+	font-size: 20px;
+	font-weight: $sRegular;
+}
+
+//count
+.totalProducts--layout{
+	border:none;
+	text-align: left;
+	padding: 0 0 20px;  
+	font-weight: $sSemibold;
+	font-size: 14px;
+	text-transform: lowercase;  	
+
+	.totalProductsMessage{		
+		text-transform: initial;
+		color: $base;
+		font-weight: $sSemibold;
+		
+		&::after {
+			content: " encontrados";
+		}
+	}
+}
+
+
+//orderby
+.orderByDropdown{
+  	max-width: inherit;	
+	padding-top: 0;
+
+  	.orderByButton {				
+		text-align: left;
+		height: 40px;
+		border: none;
+
+		.filterPopupArrowIcon {
+			margin-left: auto;
+		}
+
+		.filterPopupTitle {
+			font-size: 14px;			
+			text-transform: none;			
+			font-weight: $sBold;
+		}
+
+		.orderByText {
+			color: $base;
+			font-size: 14px;			
+			text-transform: none;
+			font-weight: $sRegular;
+		}
+  	}
+	.orderByOptionsContainer {
+		border-radius: $radiusSmall;
+		border-color: $base;
+		overflow: hidden;
+		z-index: 99;
+
+		.orderByOptionItem {			
+			font-weight: $sSemibold;
+			font-size: 14px;
+		}
+	}
+}
+
+.searchResultContainer--cat-desk {
+  	.galleryItem--search-gallery {
+    	padding: 0 0 16px;
+		  flex-basis: 25% !important;
+    	max-width: 25% !important;
+	}
+}
+
+
+//list products
+.gallery--search-gallery{
+	padding: 0;  
+
+	//shelf
+	.galleryItem--search-gallery {		
+		box-sizing: border-box;		
+		margin: 0;    
+	}
+}
+
+//show more
+.buttonShowMore {
+
+	:global(.vtex-button) {
+		border-radius: $radius;
+		height: 44px;
+	}
+	
+	:global(.vtex-button__label) {				
+		text-transform: lowercase;
+    	padding: 0 30px !important;		
+		&::after {
+			content: "...";
+		}
+
+	}
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--row-showMore) {
+  padding: 30px 0;
+}
+
+
+
+.galleryItem{
+  position: relative;
+  :global(.vtex-product-summary-2-x-container){
+    margin: 0;
+  }
+}
+
+/*
+.galleryItem--search-gallery--normal{
+  :global(.vtex-product-summary-2-x-container){
+    position: relative;
+    margin: 0 auto!important;
+  }
+}
+*/
+
+
+//==========================================================================
+//   RESPONSIVO TALBET
+//==========================================================================
+@media(max-width: $screen-tb) {
+  
+  //title
+  .galleryTitle--layout{
+    margin: 0;
+    padding: 0 10px 5px;    
+    text-align: center;    
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #fff;
+  }
+
+  //count
+  .totalProducts--layout{
+    text-align: center;
+    padding: 0 0px 15px;
+    border-bottom: 1px solid $border;  
+    font-weight: $sRegular;    
+    font-size: 13px;
+    background-color: #fff;
+    &::before {
+      content: "(";
+    }
+    &::after {
+      content: ")";
+    }
+  
+    .totalProductsMessage{
+      font-weight: $sRegular;      
+      &::after {
+        display: none;
+      }
+    }
+  }
+  
+  //filter
+  :global(.vtex-flex-layout-0-x-flexRow--header-category) {
+    padding: 10px 0;
+  }
+  .filterPopupButton {
+    padding: 0;
+    width: 120px;
+    margin-right: auto;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: $primaryColor;
+
+    .filterPopupTitle {
+      color: #fff;
+      text-transform: none;
+      font-size: 13px;
+      font-weight: $sBold;
+      margin-left: 15px;
+    }
+    .filterIcon {
+      display: none;
+    }
+    &::after {
+      content: "";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      margin: 0 10px 0 auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60%;      
+      filter: brightness(0) invert(1);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' width='451.846px' height='451.847px' viewBox='0 0 451.846 451.847' style='enable-background:new 0 0 451.846 451.847;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744 L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284 c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+  }
+
+  //orderby
+  .orderByDropdown{
+    max-width: 180px;
+    width: 100%;
+    .orderByButton {
+      height: 44px;
+
+      .orderByText {     
+        font-size: 13px;      
+      }
+    }
+    .orderByOptionsContainer {
+      .orderByOptionItem {      
+        font-size: 13px;
+      }
+    }
+  }
+  
+  //leftbar
+  .sidebar {
+    .accordionFilter {
+
+      .filterAccordionBreadcrumbs {
+        height: auto;
+
+        .filterBreadcrumbsItem,
+        .filterBreadcrumbsContent {
+          padding: 0;
+
+          .caretIcon {
+            width: 8px;
+            height: 8px;
+            margin-left: 10px;
+          }
+
+          .filterBreadcrumbsText {
+            font-size: 14px;      
+          }
+          .filterBreadcrumbsItemName {
+            font-size: 14px;  
+            font-weight: $sBold;
+          }
+        }
+      }
+      
+      .accordionFilterContainer {
+        padding-left: 10px;
+        .accordionFilterItem {
+          min-height: inherit;
+          padding: 5px 15px 5px 5px;
+
+          .accordionFilterContent {
+            font-size: 14px;
+            padding: 10px 0;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .accordionFilterOpen {
+      .filterAccordionItemBox {
+        min-height: inherit;
+        padding: 12px 10px 12px 0;
+      }
+      :global(.vtex-checkbox__label) {
+        font-size: 14px;
+      }
+    }
+
+    .filterButtonsBox {
+      :global(.vtex-button) {
+        border:none;
+      }
+      :global(.vtex-button__label) {
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        font-size: 14px;
+        font-weight: $sBold;
+      }
+
+      .filterClearButtonWrapper {
+        :global(.vtex-button) {
+          background-color: #ddd;
+          :global(.vtex-button__label) {
+            color: $base;
+          }
+        }
+      }
+      .filterApplyButtonWrapper {
+        :global(.vtex-button) {
+          background-color: $button;
+          :global(.vtex-button__label) {
+            color:#fff;
+          }
+        }
+      }
+    }
+  }
+
+  //list products
+  .gallery--search-gallery{  
+    padding: 10px 5px 0;
+    margin-top: 0;
+    .galleryItem--search-gallery {
+      padding: 0;      
+    }
+  }
+}
+
+

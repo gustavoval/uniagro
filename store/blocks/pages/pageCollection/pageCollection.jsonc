@@ -1,0 +1,107 @@
+{
+	"store.custom#custom-search": {
+		"blocks": ["search-result-layout.customQuery#custom-search"]
+	},
+	"search-result-layout.customQuery#custom-search": {
+		"props": {
+			"querySchema": {
+				"orderByField": "OrderByReleaseDateDESC",
+				"hideUnavailableItems": false,
+				"maxItemsPerPage": 50,
+				"queryField": "146",
+				"mapField": "productClusterIds",
+				"skusFilter": "ALL_AVAILABLE",
+				"simulationBehavior": "skip",
+				"__unstableProductOriginVtex": true
+			}
+		},
+		"blocks": [
+			"search-result-layout.desktop#collection-search",
+			"search-result-layout.mobile#collection-search-mobile",
+			"search-not-found-layout"
+		]
+	},
+
+	"search-result-layout.desktop#collection-search": {
+		"children": [			
+			"flex-layout.row#result-collection"
+		],
+		"props": {
+			"pagination": "show-more",
+			"preventRouteChange": true,
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			}
+		}
+	},
+
+	"search-result-layout.mobile#collection-search-mobile": {
+		"children": [
+			"flex-layout.row#main-banners-collection",      			
+			"rich-text#title-seller",
+			"total-products.v2",
+			"flex-layout.row#searchinfomobile",
+			"flex-layout.row#fetchprevious",
+			"flex-layout.row#contentmobile",
+			"flex-layout.row#fetchmore"
+		],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			}
+		}
+	},
+
+	//result
+	"flex-layout.row#result-collection": {
+		"children": [
+			"flex-layout.col#filter",
+			"flex-layout.col#content-collection"
+		],
+		"props": {
+			"blockClass": ["wrap","wCol","result-plp","bg-white"]
+		}
+	},
+
+	"flex-layout.col#content-collection": {
+		"children": [
+			"flex-layout.row#main-banners-collection",
+			"rich-text#title-seller",
+			"flex-layout.row#searchinfo",			
+			"flex-layout.row#fetchprevious",
+			"flex-layout.row#products",
+			"flex-layout.row#fetchmore"
+		],
+		"props": {
+			"blockClass": "right-pdp",
+			"width": "84%",
+			"preventVerticalStretch": true
+		}
+	},
+	
+	"rich-text#title-seller": {
+		"props": {
+		"text": "## Nome da coleção",
+			"blockClass": ["title-seller"]
+		}
+	},
+
+	
+	"flex-layout.row#main-banners-collection": {
+	  	"children": [        
+			"image#image-main-banners-collection"
+		]
+	},
+		
+	"image#image-main-banners-collection":{
+		"props":{  
+			"blockClass": "banner",    
+			"src": "assets/banners/catalog/main-banner-catalog.jpg"
+			//"link": "/"
+		}        
+	}
+	
+}

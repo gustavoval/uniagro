@@ -1,0 +1,87 @@
+:global(.vtex-flex-layout-0-x-flexRow--row-not-found){
+    background-color: $light;
+    padding: 60px 0;
+
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        width: 100% !important;
+    }
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--row-not-found) {
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;    
+    text-align: center;
+
+    :global(.vtex-store-components-3-x-imageElement--icon-404) {
+        width: 30px;
+        
+        height: auto;
+        margin: 0 auto;
+        opacity: .4;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .heading-level-2 {
+        line-height: 1;
+        margin: 0;
+        text-align: center;
+        font-size: 33px;
+        text-transform: uppercase;
+        padding: 18px 0 0;
+        color: $button;    
+    }
+
+    .heading-level-3 {
+        text-align: center;
+        margin: 0;
+        padding: 25px 0 0;
+        color: #888;
+        font-size: 28px;
+        line-height: 1.2;   
+    }
+    .paragraph {
+        padding: 15px 0 45px;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+    }
+    .link {
+        max-width: 200px;
+        margin:0 auto;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background: $primaryColor;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 0 20px;
+        height: 40px;
+    }
+}
+
+:global(.vtex-list-context-0-x-list--list-context-wishlist) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 1024px) {
+    :global(.vtex-list-context-0-x-list--list-context-wishlist) {
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+  }
+  @media (max-width: 650px) {
+    :global(.vtex-list-context-0-x-list--list-context-wishlist) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

@@ -1,0 +1,84 @@
+
+
+.container {
+	
+	display: flex;
+	align-items: center;	
+	padding: 20px 0;
+	//border-bottom: 1px solid $border;
+	
+	.arrow {
+		color: $base;
+	}
+}
+
+//home
+.homeLink {
+	margin-left: 0;
+	padding-left: 0 !important;
+  
+	&::before {
+		content: "Home";
+		font-size: 12px;		
+		display: block;
+	}
+  
+	.homeIcon {
+		display: none;
+	}
+}
+
+//arrow
+.arrow {
+	display: flex;
+    align-items: center;
+
+	.caretIcon{
+		color: $text;
+	}
+}
+
+.link {	
+	font-size: 12px;	
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 120px;
+
+	&:hover{  
+		text-decoration: underline;
+	}
+}
+
+.arrow,
+.homeLink,
+.homeLink::before,
+.term {
+  	line-height: 1;
+}
+
+.arrow {	
+  	&.termArrow{
+    	padding: 0 4px;
+  	}
+}
+
+//last
+.term {    
+    //font-size: 13px;
+    font-weight: $sBold;
+	font-size: 12px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 120px;
+}
+
+@media(max-width: $screen-mb) {
+	.term,
+	.link,
+	.homeLink::before {
+		font-size: 10px;
+	}
+}

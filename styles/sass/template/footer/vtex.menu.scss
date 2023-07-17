@@ -1,0 +1,66 @@
+
+
+.menuContainerNav--menu-footer{
+	.menuContainer{
+		.menuItem{
+			.styledLinkContainer{        
+				margin: 0;
+				padding: 4px 0;
+				line-height: 1;
+					
+				.styledLinkContent {
+					width: 100%;					
+					font-size: 13px;
+					padding: 4px 0;
+					color: $base;					
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					-webkit-line-clamp: 1;
+					display: inline-block;
+					max-width: 200px;
+						
+					&:hover{
+						color: $primaryColor;
+					}
+					
+				}
+			}
+		}
+
+		.menuItem--last {
+			
+		}
+	}
+}
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+	.menuContainer--menu-footer {
+		display: block;
+		columns: auto 2;
+
+		&.menuContainer--last {
+			columns: auto;
+		}
+	}
+
+	.menuContainerNav--menu-footer{
+		.menuContainer{
+			.menuItem{
+				.styledLinkContainer{        					
+					padding: 4px 0;
+
+					.styledLinkContent { 
+						max-width: inherit;
+						overflow: visible;
+					}
+				}
+			}
+	
+		}
+	}
+}

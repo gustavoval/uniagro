@@ -1,0 +1,64 @@
+//coleçao com fundo
+.flexRow--shelf-bg {    
+    height: 460px;
+    padding: 40px 0 10px;    
+    background-color: $base;
+    background-image: url(assets/bg-colecao.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+
+    :global(.vtex-store-components-3-x-container){
+        max-width: 1280px;
+    }
+}
+//coleção com banner
+.flexCol--absolute {
+    position: relative;
+}
+.flexColChild--absolute {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {   
+    .flexRow--insta {
+        :global(.vtex-store-components-3-x-container) {
+            padding-right: 0;
+            padding-left: 6px;
+        }
+    } 
+    .flexRow--carousel {
+        padding-bottom: 30px;
+        :global(.vtex-store-components-3-x-container) {
+            padding-right: 0;
+            padding-left: 6px;
+        }
+    }
+    .flexCol--box-bg {
+        padding: 0 5px 30px;
+    }
+
+    .flexColChild--absolute {
+        position: initial;
+    }
+    .flexCol--box-bg {
+        padding: 0 10px 30px;
+        min-height: inherit;
+    }
+
+    .flexRow--shelf-bg {
+        padding: 15px 0 0;
+        height: auto;
+    }    
+
+    .flexRowContent--shelf-bs {
+        padding-bottom: 0;
+    }
+}
+

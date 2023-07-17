@@ -1,0 +1,52 @@
+{
+	
+  	//banner
+	"flex-layout.row#horizontal-banner-01":{
+		"children":[
+			"image#img-horizontal-banner-01"
+		],
+		"props":{
+			//"fullWidth": true,			
+			"blockClass":["wrap","wCol"],			
+			"preserveLayoutOnMobile":true,
+			"preventHorizontalStretch":true
+			
+		},
+		"title":"Banner Horizontal: Desktop"
+	},
+
+	"image#img-horizontal-banner-01":{
+		"props":{
+			"blockClass": ["banner","rd"],						
+			"src": "assets/banners/home/horizontal-banner.jpg",
+			"link":{
+                "url":"/misturinha"
+            }
+		}
+	},
+
+	//banner
+	"flex-layout.row#horizontal-banner-01-mobile":{
+		"children":[
+			"image#img-horizontal-banner-01-mobile"
+		],
+		"props":{
+			//"fullWidth": true,			
+			"blockClass":["wrap","wCol"],			
+			"preserveLayoutOnMobile":true,
+			"preventHorizontalStretch":true
+			
+		},
+		"title":"Banner Horizontal: Mobile"
+	},
+
+	"image#img-horizontal-banner-01-mobile":{
+		"props":{
+			"blockClass": ["banner","rd"],						
+			"src": "assets/banners/home/horizontal-banner-mobile.jpg",
+			"link":{
+                "url":"/misturinha"
+            }
+		}
+	}
+}

@@ -1,0 +1,112 @@
+
+
+//title menu
+.wrapper--footer-title {
+    width: 100%;
+    
+}
+.paragraph--footer-title {
+    line-height: 1;
+    margin: 0;
+
+    .strong--footer-title {
+        line-height: 1;
+        display: block;
+        padding: 15px 0 10px;
+        font-size: 15px;
+        color: $primaryColor;
+    }
+}
+
+.paragraph--ftc {
+    margin: 0;
+    padding: 4px 0;
+    line-height: 1;
+}
+.link--ftc {
+    text-decoration: none;
+    color: $base;
+
+    &:hover {
+        color: $primaryColor;        
+    }
+}
+.link--footer-phone {
+    font-size: 14px;  
+    font-weight: $sSemibold;
+}
+.link--footer-email {
+    margin-top: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+.paragraph--footer-contact {
+    font-size: 12px;    
+}
+
+:global(.vtex-store-components-3-x-imageElement--logo-footer) {
+    margin: 15px 0;
+}
+
+// subtitle label
+.paragraph--footer-subtitle {
+    font-size: 13px;
+    line-height: 1;    
+    padding: 15px 0 7px;  
+    font-weight: $sBold;
+    color: $primaryColor;
+    margin: 0;
+}
+
+
+
+//copyright
+.wrapper--copyright {
+    padding: 16px 0;
+
+    .paragraph {
+        font-size: 12px;
+        line-height: 16px;        
+        padding: 4px 0;
+        margin: 0;
+        color: $text;
+    }
+
+    .link {
+        color: $base;
+    }
+}
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-tb) {
+    //title
+    .paragraph--footer-title {        
+        //padding-top: 20px;
+        font-size: 15px;
+    }
+
+    //subtitle
+    .paragraph--footer-subtitle {
+        //font-weight: $sRegular;
+        font-size: 11px;
+        padding-top: 20px;
+    }
+
+    
+
+    //newsletter
+    .container--txt-newsletter {
+        display: block;
+    }
+    .paragraph--txt-newsletter,
+    .heading--txt-newsletter {
+        text-align: center;
+    }
+
+    //copyright
+    .wrapper--copyright {
+        padding:15px 10px;
+    }
+}

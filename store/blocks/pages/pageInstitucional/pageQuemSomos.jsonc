@@ -1,0 +1,47 @@
+{
+	"store.custom#template-institucional-video": {
+		"blocks": [
+			"flex-layout.row#institucional-video-wrap"
+		]
+	},
+	"flex-layout.row#institucional-video-wrap":{
+		"children":[      
+			"flex-layout.col#institucional-video-content",
+			"flex-layout.col#institucional-menu"
+		],
+		"props":{
+			//"fullWidth":true,
+			"paddingTop":"6",
+			"blockClass":["wrap","wCol"]
+		}
+	},
+
+	"flex-layout.col#institucional-video-content":{
+		"children":[
+			"image#institucional-banner",
+			"rich-text#institucional-title",
+			"rich-text#institucional-content",
+            "iframe#institutional-video"
+		],
+		"props":{			
+			"width":"75%",
+			/*
+			"width":{
+				"desktop": "70%",
+				"tablet": "70%",
+				"phone": "100%"
+			},
+			*/
+			"blockClass": "col-content-institucional"
+		},
+		"title": "Col - Content"
+	},
+	
+	"iframe#institutional-video": {
+		"props": {
+			"width": "1366px",
+			"height": "610px",
+			"src": "https://www.youtube.com/embed/"
+		}
+	}
+}

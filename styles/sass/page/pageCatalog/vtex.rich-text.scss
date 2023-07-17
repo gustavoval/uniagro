@@ -1,0 +1,23 @@
+.container--plp-seo-text{
+  
+  padding: 0 15px;
+
+  .wrapper--plp-seo-text {
+    border-top: 1px solid $border;
+    padding-top: 25px;    
+  }
+  
+  .heading{
+    margin: 0 0 20px;
+    font-size: 20px;
+    color: $primaryColor;    
+    font-weight: $sBold;
+    text-transform: uppercase;
+  }
+  .paragraph{    
+    font-weight: $sRegular;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,40 @@
+{
+	
+	//favoritos
+	"flex-layout.col#link-wishlist":{
+		"children":[
+            "image#btn-wishlist"
+        ],
+		"props":{            
+            "verticalAlign": "middle"
+        }
+	},
+	"image#btn-wishlist":{
+		"props":{
+			"src":"assets/icons/common/heart.svg",			
+			"blockClass":["header-link","icon-wishlist","tpl-1"],
+			"link":{
+				"url":"/account#wishlist"
+			}
+		}
+	},
+
+	//fale conosco
+	"flex-layout.col#link-map":{
+		"children":[
+			"image#btn-map2"
+		],
+		"props":{            
+			"verticalAlign": "middle"
+		}
+	},
+	"image#btn-map2":{
+		"props":{
+			"src":"assets/icons/common/map.svg",			
+			"blockClass":["header-link","icon-map","tpl-1"],
+			"link":{
+				"url":"http://uniagropertinhodemim.com.br"
+			}
+		}
+	}
+}

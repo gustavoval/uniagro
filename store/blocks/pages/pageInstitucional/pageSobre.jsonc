@@ -1,0 +1,315 @@
+{
+	"store.custom#template-sobre": {
+		"blocks": [
+			"flex-layout.row#sobre-01",
+            "flex-layout.row#sobre-02",
+            "flex-layout.row#sobre-03",
+            "flex-layout.row#sobre-time"
+		]
+	},
+
+    "flex-layout.row#sobre-time":{
+		"children":[      
+			"flex-layout.col#sobre-time"
+		],
+		"props":{
+            "horizontalAlign":"center",						
+			"blockClass":["card","sobre-time"]
+		}
+	},
+
+    "flex-layout.col#sobre-time":{
+		"children":[
+			"image#time-01",
+            "image#time-02",
+            "image#time-03",
+            "image#time-04",
+            "image#time-05",
+            "image#time-06",
+            "image#time-07",
+            "image#time-08",
+            "image#time-09",
+            "image#time-10",
+            "image#time-11",
+            "image#time-12",
+            "image#time-13",
+            "image#time-14",
+            "image#time-15",
+            "image#time-16",
+            "image#time-17",
+            "image#time-18"
+		],
+		"props":{            
+			"blockClass": "sobre-time"
+		}
+	},
+
+    "image#time-01":{
+        "props":{			
+            "src":"assets/banners/time-1.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-02":{
+        "props":{			
+            "src":"assets/banners/time-2.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-03":{
+        "props":{			
+            "src":"assets/banners/time-3.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-04":{
+        "props":{			
+            "src":"assets/banners/time-4.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-05":{
+        "props":{			
+            "src":"assets/banners/time-5.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-06":{
+        "props":{			
+            "src":"assets/banners/time-6.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-07":{
+        "props":{			
+            "src":"assets/banners/time-7.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-08":{
+        "props":{			
+            "src":"assets/banners/time-8.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-09":{
+        "props":{			
+            "src":"assets/banners/time-9.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-10":{
+        "props":{			
+            "src":"assets/banners/time-10.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-11":{
+        "props":{			
+            "src":"assets/banners/time-11.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-12":{
+        "props":{			
+            "src":"assets/banners/time-12.png",     
+			"blockClass":["banner"]
+        }
+    },   
+
+    "image#time-13":{
+        "props":{			
+            "src":"assets/banners/time-13.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-14":{
+        "props":{			
+            "src":"assets/banners/time-14.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-15":{
+        "props":{			
+            "src":"assets/banners/time-15.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-16":{
+        "props":{			
+            "src":"assets/banners/time-16.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-17":{
+        "props":{			
+            "src":"assets/banners/time-17.png",     
+			"blockClass":["banner"]
+        }
+    },   
+    "image#time-18":{
+        "props":{			
+            "src":"assets/banners/time-18.png",     
+			"blockClass":["banner"]
+        }
+    },   
+
+
+	"flex-layout.row#sobre-01":{
+		"children":[      
+			"flex-layout.col#sobre-01-1",
+			"flex-layout.col#sobre-01-2"
+		],
+		"props":{
+            "horizontalAlign":"center",						
+			"blockClass":["wCol"]
+		}
+	},
+
+	"flex-layout.col#sobre-01-1":{
+		"children":[
+			"image#sobre-01"
+		],
+		"props":{
+            "verticalAlign": "center",
+			"blockClass": "col-sobre"
+		}
+	},
+
+    "flex-layout.col#sobre-01-2":{
+		"children":[
+			"rich-text#sobre-01"
+		],
+		"props":{
+            "verticalAlign": "center",
+			"blockClass": "col-sobre"
+		}
+	},
+
+    "image#sobre-01":{
+        "props":{			
+            "src":"assets/banners/sobre-01-b.jpg",     
+			"blockClass":["banner"]
+        }
+    },    
+	"rich-text#sobre-01": {
+		"props": {
+			"textAlignment": "LEFT",
+            "textPosition": "LEFT",
+			"text": "# Sobre Nós \n Neste ano, a Uniagro completa 30 anos. Temos um legado, resultado da missão que assumimos desde o nosso primeiro ano de vida: selecionar sempre o MELHOR, o que FAZ BEM, o que constrói SAÚDE para o CORPO e para ALMA. Mas também o que faz bem para o seu NEGÓCIO.Estamos 100% comprometidos com um futuro mais saudável, natural e consciente, que começa agora junto com você.Para conhecer um pouco mais sobre nós",
+			"blockClass": ["txt-sobre","txt-small"]
+		}
+	},
+
+    //col 2
+    "flex-layout.row#sobre-02":{
+		"children":[      			
+			"flex-layout.col#sobre-02-2",
+            "flex-layout.col#sobre-02-1"
+		],
+		"props":{						
+			"blockClass":["card","wCol","reverse"]
+		}
+	},
+
+	"flex-layout.col#sobre-02-1":{
+		"children":[
+			"image#sobre-02"
+		],
+		"props":{
+            "verticalAlign": "center",
+			"blockClass": "col-sobre"
+		}
+	},
+
+    "flex-layout.col#sobre-02-2":{
+		"children":[
+			"rich-text#sobre-02",
+            "rich-text#sobre-02-b"
+		],
+		"props":{
+            "verticalAlign": "center",
+			"blockClass": "col-sobre"
+		}
+	},
+
+    "image#sobre-02":{
+        "props":{			
+            "src":"assets/banners/sobre-02-b.jpg",     
+			"blockClass":["banner"]
+        }
+    },    
+	"rich-text#sobre-02": {
+		"props": {
+			"textAlignment": "LEFT",
+            "textPosition": "LEFT",
+			"text": "## Propósito \n Levar equilíbrio e bem-estar para as pessoas, em qualquer momentodo dia, através de alimentos saborosos e saudáveis, selecionados com responsabilidade e carinho.",
+			"blockClass": ["txt-sobre","txt-small"]
+		}
+	},
+    "rich-text#sobre-02-b": {
+		"props": {
+			"textAlignment": "LEFT",
+            "textPosition": "LEFT",
+			"text": "## Valores \n **Compromisso**, com ações e acordos. <br> **Cooperação**, fazer junto como time. <br> **Determinação**, ir até o fim, não desistir. <br> **Sustentabilidade**, gerenciar desempenhos.",
+			"blockClass": ["txt-sobre","txt-small"]
+		}
+	},
+
+    //03
+
+    "flex-layout.row#sobre-03":{
+		"children":[      
+			"flex-layout.col#sobre-03-1",
+			"flex-layout.col#sobre-03-2"
+		],
+		"props":{
+            "horizontalAlign":"center",						
+			"blockClass":["card","wCol"]
+		}
+	},
+
+	"flex-layout.col#sobre-03-1":{
+		"children":[
+			"image#sobre-03"
+		],
+		"props":{
+            "verticalAlign": "center",
+			"blockClass": "col-sobre"
+		}
+	},
+
+    "flex-layout.col#sobre-03-2":{
+		"children":[
+			"rich-text#sobre-03",
+			"rich-text#sobre-03-b"
+		],
+		"props":{
+            "verticalAlign": "center",
+			"blockClass": "col-sobre"
+		}
+	},
+
+    "image#sobre-03":{
+        "props":{			
+            "src":"assets/banners/sobre-03-b.jpg",     
+			"blockClass":["banner"]
+        }
+    },    
+	"rich-text#sobre-03": {
+		"props": {
+			"textAlignment": "LEFT",
+            "textPosition": "LEFT",
+			"text": "## Responsabilidade Social e Ambiental \n Acreditamos numa sociedade justa e colaborativa, onde o olhar para o futuro inclui o bem-estar de todos. Adotamos práticas de gestão que garantem um ambiente seguro e acolhedor para quem trabalha conosco. Sabemos que trabalhar com verdade e respeito é o que gera vínculos reais e perenes e, por isso, somos transparentes e éticos em todas as nossas relações. Respeitamos o meio ambiente e cuidamos do nosso entorno, como forma de preservar o planeta para as atuais e futuras gerações. Acreditamos que a geração de lucro deve estar a serviço de gerar prosperidade para o todo e assim, a cada ano, apoiamos projetos sociais e ambientais que possam se beneficiar dos resultados que alcançamos graças à preferência e lealdade de nossos clientes.",
+			"blockClass": "txt-sobre"
+		}
+	},
+	"rich-text#sobre-03-b": {
+		"props": {
+			"textAlignment": "LEFT",
+            "textPosition": "LEFT",
+			"text": "### Veja alguns projetos que apoiamos \n **Mesa Brasil SESC** - rede nacional de bancos de alimentos contra a fome e o desperdício, faz a distribuição de alimentos excedentes ou fora dos padrões de comercialização, mas que ainda podem ser consumidos.",
+			"blockClass": "txt-sobre"
+		}
+	}
+}

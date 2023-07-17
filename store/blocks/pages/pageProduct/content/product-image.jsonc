@@ -1,0 +1,26 @@
+{
+    "stack-layout#image-pdp": {
+		"props": {
+		  	"blockClass": "product"
+		},
+		"children": [
+			"flex-layout.row#product-images",
+			"product-bookmark",
+			"product-specification-badges"
+		]
+	},
+
+	"flex-layout.row#product-images": {
+		"children": ["product-images"]
+	},
+
+	"product-images": {
+		"props": {  
+			"contentType": "all",			    
+		  	"displayThumbnailsArrows": true,
+			"thumbnailAspectRatio": "1:1",
+			"aspectRatio": "1:1",
+			"contentOrder":"videos-first"
+		}
+	}
+}

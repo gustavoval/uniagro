@@ -1,0 +1,57 @@
+/*
+FULL ROW BANNERS ROW SLIDER
+obs: para inserir dentro do container acrescenter o blockclass wrap
+*/
+{
+	"flex-layout.row#full-banner": {
+		"children": [
+			"list-context.image-list#demo"
+		],
+		"props":{
+            "fullWidth": true,
+			"blockClass": ["full-banner"]
+            //"blockClass": ["wrap","full-banner","banners"]
+			
+		},
+		"title": "Banner: Full"
+	},
+	
+	"list-context.image-list#demo": {
+		"children": ["slider-layout#full-slider"], // folder sliders
+		"props": {
+			"blockClass": "banner",
+			//"height": 720,
+			"images": [
+				{
+					"image": "assets/banners/home/dev/full-banner.jpg",
+					"mobileImage": "assets/banners/home/dev/full-banner.jpg",
+					"href": {
+						"url": ""            
+					}
+				},
+				{
+					"image": "assets/banners/home/dev/full-banner.jpg",
+					"mobileImage": "assets/banners/home/dev/full-banner.jpg",
+					"href": {
+						"url": "/busca?fq=H:146"            
+					}
+				}
+			]
+		}
+	},
+
+	//slider
+	"slider-layout#full-slider": {
+		"props": {
+			"blockClass": ["dot-inner", "arrow-inner"],
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "desktopOnly",
+			"showPaginationDots": "always"
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+    //row
+    "flex-layout.row#row-product-info": {
+		"props":{
+			"preventHorizontalStretch": true,
+			//"colGap":"5",
+			"marginBottom":"6"
+		},
+		"children":[
+			
+			"flex-layout.col#pdp-reference"
+			//"flex-layout.col#pdp-brand"
+			//"flex-layout.col#pdp-off"
+		]
+	},
+    
+    
+    //brand
+	"flex-layout.col#pdp-brand": {
+		"props":{
+			"verticalAlign":"middle"
+		},
+		"children":[	
+			"flex-layout.col#pdp-reference"
+		]
+	},
+
+	//ref id
+	"flex-layout.col#pdp-reference": {
+		"props":{
+			"verticalAlign":"middle"
+		},
+		"children":[
+			"product-identifier.product#pdp"
+		]
+	},
+
+	"product-identifier.product#pdp": {
+		"props": {			
+			"label": "custom",
+			"customLabel": "Código",
+			"idField": "productId" //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
+		}
+	}
+}

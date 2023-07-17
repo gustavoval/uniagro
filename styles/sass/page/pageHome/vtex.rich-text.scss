@@ -1,0 +1,71 @@
+//post
+
+.heading--txt-blog {
+    color: $primaryColor;        
+    text-transform: uppercase;
+    margin: 15px 0 0;
+    font-size: 17px;
+    letter-spacing: -.5px;
+}
+.paragraph--txt-blog {
+    font-size: 14px;
+    margin: 5px 0 0;
+    padding: 0 10px;
+    line-height: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+.link--txt-blog {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: $radius;
+    border:1px solid $button;
+    text-decoration: none;
+    color: $button;
+    text-transform: uppercase;
+    font-weight: $sBold;
+
+    font-size: 12px;
+
+    &:hover {
+        background-color: $button;
+        color: #fff;
+        border-color: $button !important;
+    }
+}
+
+.wrapper--txt-nav {
+    padding-top: 10px;
+    width: 100%;
+}
+.heading--txt-nav {
+    margin: 0;
+    font-size: 14px;
+}
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+    //post
+    :global(.vtex-flex-layout-0-x-flexRow--post) {
+        
+        .headingLevel3 {            
+            font-size: 26px;        
+        }
+
+        .headingLevel4 {                            
+            font-size: 20px;        
+        }
+    }
+    .heading--txt-blog {
+        font-size: 15px;
+    }
+    .paragraph--txt-blog {
+        font-size: 13px;
+    }
+}

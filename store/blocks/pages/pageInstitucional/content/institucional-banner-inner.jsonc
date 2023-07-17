@@ -1,0 +1,9 @@
+{
+    "image#institucional-banner-inner":{
+		"props":{
+			"blockClass":["banner","banner-institucional"],
+			"src": "assets/banners/home/dev/full-banner.jpg"
+		},
+		"title": "Banner"
+	}
+}

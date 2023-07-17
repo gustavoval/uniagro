@@ -1,0 +1,77 @@
+:global(.vtex-my-account-1-x-newsletterBoxContainer) {
+    display: none !important;
+}
+
+.flexCol--col-institucional-menu {
+    padding-left: 30px;
+}
+.flexColChild--col-institucional-menu {
+    height: auto !important;
+}
+
+.flexColChild--col-institucional-menu {
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+    position: relative;
+}
+
+
+//assinatura
+.flexRow--como-funciona {
+    padding: 30px 0;
+    background-color: $light;
+    margin-bottom: 40px;
+}
+
+
+.flexCol--col-sobre {
+    justify-content: center;
+    align-items: center;
+
+    :global(.vtex-store-components-3-x-imageElement--banner) {
+        max-width: 520px !important;
+        margin: 0 auto;
+    }
+}
+.flexRow--sobre-time {
+    background-color: $secondaryColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(assets/banners/bg-time2.jpg);
+    height: 600px;
+    overflow: hidden;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-track {background-color: #46D878; border-radius: 6px;}
+	&::-webkit-scrollbar {width: 3px;background: #006b4f; border-radius: 6px;}
+	&::-webkit-scrollbar-thumb {background: #006b4f; border-radius: 6px;} 
+
+    :global(.vtex-store-components-3-x-imageElement--banner) {
+        max-width: 1120px !important;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {    
+    .flexCol--col-institucional-menu {
+        display: none;
+    }
+
+    //quem somos
+    .flexRowContent--post-quemsomos {        
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .flexRow--sobre-time {
+        background-size: auto;
+        height: 57.903vw;
+        
+    }
+}

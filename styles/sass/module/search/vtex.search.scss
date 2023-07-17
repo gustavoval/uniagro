@@ -1,0 +1,145 @@
+
+
+.biggy-autocomplete {
+    //border-radius: $radius;
+    box-sizing: border-box;        
+
+    //history
+    .history-and-top-wrapper {
+
+        //title
+        .itemListTitle {
+            text-transform: none;
+            font-size: 15px;
+            font-weight: $sRegular;
+            color: $primaryColor;   
+            margin-top: 0;      
+
+            &::after{
+                content: "";
+                border-bottom: 1px solid $border;
+                margin: 10px 0 0;
+                width: 100%;
+                display: block;
+            }
+            
+            
+        }
+
+       
+        //link
+        .itemListLink {
+            font-size: 13px;
+            height: 30px;
+            line-height: 30px;
+            //padding: 0 10px;
+        }
+    }
+
+    //top search
+    .itemList--top-search {
+
+        
+    }
+
+    //suggestion
+    .itemList--suggestion {
+        width: 40%;
+        flex: 0 0 40%;
+
+        //title
+        .itemListTitle {
+            //display: none;
+            text-transform: none;
+            font-size: 15px;
+            font-weight: $sRegular;
+            color: $primaryColor;   
+            margin-top: 0;      
+            margin-bottom: 11px;
+            
+            &::after{
+                content: " de busca";
+            }
+        }
+        //ol
+        .itemListList {
+
+        }
+
+        //li
+        .itemListItem {
+            border-top: 1px solid $border;
+            //display: inline-block;
+            //padding:1px 3px;
+
+            //a
+            .itemListLink {
+                /*
+                display: inline-block;
+                height: auto;
+                line-height: 1;
+                padding: 5px 8px;
+                border-radius: 10px;
+                background-color: $light;
+                margin: 0;
+                font-size: 12px;
+
+                &:hover {
+                    background-color: $primaryColor;
+                    color: #fff !important;
+                }
+                */
+            }
+        }
+
+        //sub
+        .itemListSubItem {
+            border-top: 1px solid $border;
+            //display: inline-block;
+            //padding: 0 5px;
+            //display: none;
+            .itemListSubItemLink {
+                color: $text;
+                margin-right: 0;
+                /*
+                display: inline-block;
+                height: auto;
+                line-height: 1;
+                padding: 5px 8px;
+                border-radius: 10px;
+                background-color: $light;
+                margin: 0;
+                
+
+                &:hover {
+                    background-color: $primaryColor;
+                    color: #fff;
+                }
+                */
+            }
+        }
+    }
+
+    //produtos
+    .tileList {
+        width: 60%;
+        flex: 0 0 60%;
+
+        .tileListTitle {
+            text-transform: none;
+            font-size: 15px;
+            font-weight: $sRegular;
+            color: $primaryColor;
+            margin-top: 0;
+            padding: 0 10px;
+
+            &::after{
+                content: "";
+                border-bottom: 1px solid $border;
+                margin: 10px 0 0;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}

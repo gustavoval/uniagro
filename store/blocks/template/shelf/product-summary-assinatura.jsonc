@@ -1,0 +1,39 @@
+{
+	"product-summary.shelf#assinatura": {
+		"children": [			
+			"stack-layout#image-shelf",						
+			"product-summary-name",						
+			"product-summary-space",				
+			"flex-layout.row#list-price-shelf",
+			"product-selling-price#shelf",
+			"product-installments#shelf",					
+			"flex-layout.row#summary-actions-assinatura"
+		]
+	},
+
+	//BUY BUTTON	
+	"flex-layout.row#summary-actions-assinatura":{
+		"children": [		  
+            "modal-trigger#summary-subscription"
+		],
+		"props":{			
+			"blockClass": "summary-action"			
+		}
+	},
+	
+	
+	
+	"modal-trigger#summary-subscription": {
+		"children": [		  	
+		  "rich-text#summary-subscription",		  		  
+		  "modal-layout#subscription"
+		]
+	},
+
+    "rich-text#summary-subscription": {
+		"props": {
+			"blockClass":["buy-button-sub","summary"],
+		  	"text": "Selecionar"
+		}
+	}
+}

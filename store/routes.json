@@ -1,0 +1,29 @@
+{
+  "store.custom#template-institucional":{
+    "path":"/institucional"
+  },
+  "store.custom#template-manutencao":{
+    "path":"/manutencao"
+  },
+  "store.custom#template-faq":{
+    "path":"/faq"
+  },
+  "store.custom#contact-us":{
+    "path":"/fale-conosco"
+  },
+  "store.custom#template-institucional-video":{
+    "path":"/institucional-video"
+  },
+  "store.custom#template-lista-receitas":{
+    "path":"/receitas"
+  },
+  "store.custom#template-search-receitas":{
+    "path":"/todas-receitas"
+  },
+  "store.custom#custom-assinaura":{
+    "path":"/clube-de-compras"
+  },
+  "store.custom#template-sobre":{
+    "path":"/cutom-sobre"
+  }
+}

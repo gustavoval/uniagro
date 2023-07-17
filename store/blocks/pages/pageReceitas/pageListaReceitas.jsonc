@@ -1,0 +1,70 @@
+{
+	"store.custom#template-lista-receitas": {
+		"blocks": [
+			//"flex-layout.row#receitas-banner",
+            //"flex-layout.row#receitas-title",
+            //"flex-layout.row#receitas-lista"
+			"show-receita"
+		]
+	},
+
+    "flex-layout.row#receitas-title":{
+		"children": [
+			"rich-text#title-shelf-01"
+		],
+        "props":{
+			"preserveLayoutOnMobile":true,	
+            "blockClass": ["wrap","card"]
+        },
+		"title": "Receitas: Título página"
+	},
+
+    "flex-layout.row#receitas-banner":{
+		"children": [
+			"list-context.image-list#receitas"
+		],
+		"props":{
+            "fullWidth": true,
+			"blockClass": ["full-banner"]
+            //"blockClass": ["wrap","full-banner","banners"]
+			
+		},
+		"title": "Receitas: Banner"
+	},
+
+    "list-context.image-list#receitas": {
+		"children": ["slider-layout#full-slider"], // folder sliders
+		"props": {
+			"blockClass": "banner",			
+			"images": [
+				{
+					"image": "assets/banners/home/dev/full-banner.jpg",
+					"mobileImage": "assets/banners/home/dev/full-banner.jpg",
+					"href": {
+						"url": ""            
+					}
+				},
+				{
+					"image": "assets/banners/home/dev/full-banner.jpg",
+					"mobileImage": "assets/banners/home/dev/full-banner.jpg",
+					"href": {
+						"url": "/busca?fq=H:146"            
+					}
+				}
+			]
+		}
+	},
+
+    "flex-layout.row#receitas-lista":{
+		"children": [
+			"lista-receitas"
+		],
+		"props":{
+            "fullWidth": true,
+			"blockClass": ["full-banner"]
+            //"blockClass": ["wrap","full-banner","banners"]
+			
+		},
+		"title": "Receitas: Post"
+	}
+}

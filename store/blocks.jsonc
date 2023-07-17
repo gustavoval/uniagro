@@ -1,0 +1,84 @@
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+  
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+
+  "store.product-review-form": {
+    "blocks": ["product-review-form"]
+  },
+
+  "store.not-found#product": {
+    "blocks": [
+      "flex-layout.row#row-not-found"
+    ]
+  },
+
+  "flex-layout.row#row-not-found":{
+    "children":[
+      "image#image-not-found",
+      "rich-text#text-not-found-01",
+      "rich-text#text-not-found-02",
+      "rich-text#text-not-found-03",
+      "rich-text#link-not-found"
+    ],
+    "props":{
+      "blockClass":["centralizer","carousel","row-not-found"]
+    }
+  },
+
+  "image#image-not-found":{
+    "props":{
+      "src":"assets/icons/triste.svg",
+      "blockClass":["icon-404"]      
+    }
+  },
+  "rich-text#text-not-found-01": {
+    "props": {      
+      "text": "## ERRO 404"
+    }
+  },
+  "rich-text#text-not-found-02": {
+    "props": {      
+      "text": "### Ih, essa página não existe!"
+    }
+  },
+  "rich-text#text-not-found-03": {
+    "props": {      
+      "text": "Talvez a página tenha sido removida ou você tenha digitado o endereço errado."
+    }
+  },
+  "rich-text#link-not-found": {
+    "props": {      
+      "text": "[Voltar para a home](/)"
+    }
+  },
+  
+
+
+  "store.not-found#search": {
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PAGE NOT FOUND**",
+      "font": "t-heading-1"
+    }
+  }
+}

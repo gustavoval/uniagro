@@ -1,0 +1,23 @@
+
+
+/* banner */
+.imageElementLink--banner {
+	display: block;
+	width: 100%;
+}
+.imageElement--banner {
+	max-height: inherit !important;
+	width: 100%;
+	display: block;
+	
+	&.imageElement--rd {
+		overflow: hidden;
+		border-radius: $radius;
+	}
+}
+
+
+@media(max-width: $screen-mb) {
+
+    
+}

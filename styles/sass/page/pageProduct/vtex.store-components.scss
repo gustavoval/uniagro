@@ -1,0 +1,296 @@
+
+
+//name product
+.productNameContainer {    
+    margin:8px 0 4px;
+
+    .productBrand {
+        color: $base;
+        font-weight: $sSemibold;
+        font-size: 26px;               
+    }
+}
+
+:global(.vtex-product-specifications-1-x-specificationValue) {
+    font-weight: $sBold;
+}
+
+
+
+
+//shipping product
+.shippingContainer{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 30px;    
+    margin-top: 15px;
+    
+
+    :global(.vtex-address-form__postalCode){
+        padding-bottom: 0;
+
+        //input
+        :global(.vtex-input){
+
+            :global(.vtex-input__label){
+                position: absolute;
+                top: 10px;
+                left: 0;
+                font-size: 0;
+                color: #fff;
+                margin: 0;
+                height: 14px;
+                display: block;
+                width: auto;
+                
+                &::before{
+                    color: $base;
+                    content: "Calcule o frete e prazo";
+                    font-size: 13px;
+                    font-weight: $sSemibold;
+                }
+            }
+            
+            :global(.vtex-input-prefix__group){
+                border-width: 1px;
+                border-color: #ccc;
+                max-width: 160px;
+                border-radius: $radius;
+            }
+            
+            :global(.vtex-address-form-4-x-input) {
+                font-size: 16px;    
+                padding-left: 10px;
+                font-weight: $sSemibold;                
+            }
+        }
+
+        //link
+        :global(.vtex-address-form__postalCode-forgottenURL){
+            font-size: 13px;  
+            text-decoration: none;     
+            position: absolute;
+            left: 240px;
+            top: 44px;
+            padding: 0;  
+            
+            
+            :global(.vtex__icon-external-link){
+                display: none;
+            }
+            
+        }
+    }
+
+    //button
+    :global(.vtex-button){
+        width: auto;        
+        height: auto;
+        padding: 0;                
+        background: #fff;        
+        border: 1px solid $primaryColor;
+        cursor: pointer;        
+        margin-left: 5px;
+        border-radius: $radius;
+        
+        
+
+        &:hover {
+            background-color: $primaryColor;
+            :global(.vtex-button__label){
+                &::before {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+        :global(.vtex-button__label){          
+            font-size: 0;
+            height: 38px;
+            text-transform: lowercase;          
+
+            &::before{
+                content: "ok";
+                font-size: 13px;    
+                font-weight: $sBold;
+                color: $primaryColor;                
+            }
+            
+        }
+    }
+}
+.shippingTableHead {
+    display: table-header-group;
+}
+
+.shippingTable {
+    border: none;
+    padding-bottom: 0;
+}
+.shippingTableCell {
+    color: $base;
+}
+.shippingTableHeadDeliveryName,
+.shippingTableHeadDeliveryEstimate,
+.shippingTableHeadDeliveryPrice {
+    font-size: 12px;
+    text-align: left;
+    padding: 5px 0.5rem;
+    background-color: #fff;
+    
+}
+.shippingTableRow {
+    background-color: $light;
+}
+.shippingTableRadioBtn {    
+    display: none;
+}
+
+
+
+//share
+.shareContainer {    
+    display: flex;
+    align-items: center;
+
+    .shareSocialIcon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .shareLabel{
+        font-size: 12px;              
+        margin: 0 10px 0 0;
+
+        &::after {
+            content: ":";
+        }
+    }
+}
+
+
+// image
+.productImagesContainer {
+    //max-width: 560px;
+}
+.productImage{
+    overflow: hidden;
+    border-radius: $radius;
+    cursor: zoom-in;
+  
+    .productImageTag--zoom{
+      cursor: zoom-out;
+    }
+}
+.productImagesContainer {
+    row-gap: 15px;
+    column-gap: 15px;
+  
+  
+    .carouselGaleryThumbs {
+        width: 13% !important;      
+    }
+    .carouselGaleryCursor {
+        margin: 0 !important;
+        width: 87%;
+        :global(.vtex-store-components-3-x-swiperCaret) {
+            display: none !important;
+        }
+    }
+}
+  
+.productImagesThumb {
+    border:1px solid $border;
+    border-radius: $radius;
+    overflow: hidden;   
+    margin-bottom: 6px;
+}
+
+//deals
+.imageElement--pdp-deals {
+    width: 24px;
+    height: 24px;    
+}
+
+.productDescriptionContainer {    
+    max-width: 840px;
+    padding: 30px;
+    background-color: $primaryColor;
+    border-radius: $radius;    
+}
+.productDescriptionTitle {
+    display: inline-block;
+	font-weight: $sRegular;
+	font-family: 'Lobster', Helvetica, sans-serif;
+	font-size: 28px;						
+	margin: 0 0 20px;
+	width: auto;
+	color: #fff;
+	padding: 0;	
+
+	&::after {
+		content: "";
+		display: block;
+		height: 3px;
+		background-color: $secondaryColor;
+		margin: 3px 0 0;
+	}
+}
+
+.productDescriptionText {
+   color: #fff;
+   font-size: 14px;   
+   line-height: 20px;
+}
+
+:global(.vtex-shelf-1-x-relatedProducts--related-products) {
+    text-align: center;
+}
+
+
+
+
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+    .productDescriptionTitle {
+        font-size: 24px;
+    }
+    //shipping
+    .shippingContainer{
+        :global(.vtex-address-form__postalCode){
+            //link
+            :global(.vtex-address-form__postalCode-forgottenURL){                                
+                position: initial;                
+                padding: 10px 0 0;     
+            }
+        }        
+    }
+
+    //image
+    .productImagesContainer {
+        .carouselGaleryCursor {
+            width: auto;
+            margin-bottom: 30px !important;
+        }
+    }
+
+    //description
+    .productDescriptionText {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    //name
+    .productNameContainer {    
+        .productBrand {
+            font-size: 20px;
+            line-height: 25px;        
+        }
+    }
+}

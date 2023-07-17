@@ -1,0 +1,32 @@
+{
+    "flex-layout.col#search-desktop":{
+        "children":[
+            "search-bar#desktop"
+        ],
+        "props":{
+            "blockClass":["col-search"],
+            "verticalAlign": "middle",
+            "width":"grow"
+        }
+    },
+
+    "search-bar#desktop":{
+        "blocks":["autocomplete-result-list.v2#desktop"],
+        "props":{
+            "displayMode": "search-and-clear-buttons",
+            "openAutocompleteOnFocus":true,
+            "placeholder": "Busque por nome ou código...",
+            "blockClass":["desk-search"]
+        }
+    },
+    
+    "autocomplete-result-list.v2#desktop":{
+        "props":{
+            "maxSuggestedProducts": 4,            
+            "maxSuggestedTerms": 12,
+            "hideUnavailableItems": true,
+            "simulationBehavior": "skip"
+        },
+        "blocks":["product-summary.shelf#search"]
+    }
+}

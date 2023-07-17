@@ -1,0 +1,36 @@
+{
+    //login
+    "store.login": {        
+        "blocks": [            
+            "flex-layout.row#full-login"
+            //"register"
+        ]
+    },
+
+    "flex-layout.row#full-login": {
+		"children": [            
+            "rich-text#text-login",
+			"login-content#default"
+            
+		],
+		"props":{            
+			"blockClass": ["full-login"]
+		}
+		
+	},
+
+    "rich-text#text-login": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "## Login do usuário \n\n Ainda não é um usuário? [Cadastre-se](/cadastro)"
+		}
+	},
+
+    "login-content#default": {
+        "props": {
+            "isInitialScreenOptionOnly": true,
+            "defaultOption": 1,
+            "showPasswordVerificationIntoTooltip": true
+        }
+    }
+}

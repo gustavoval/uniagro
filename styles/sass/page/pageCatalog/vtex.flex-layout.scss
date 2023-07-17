@@ -1,0 +1,12 @@
+.flexRowContent--header-category {
+    padding: 10px 0;
+}
+.flexRow--row-showMore {
+    padding: 15px 0;
+}
+.flexRowContent--banner-inner {
+    padding: 0 8px;
+    :global(.vtex-store-components-3-x-imageElement) {
+        //margin-bottom: 10px;
+    }
+}

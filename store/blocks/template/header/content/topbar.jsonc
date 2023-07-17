@@ -1,0 +1,78 @@
+{
+    // row	
+	"flex-layout.row#topbar":{
+		"children":[	
+			"slider-layout#slider-topbar"
+		],
+		"props":{
+			"preserveLayoutOnMobile": true,
+			//"fullWidth": true,
+			"horizontalAlign":"center",
+		  	"blockClass":["wrap","slider-topbar"]
+		},
+		"title": "Topbar"
+	},
+
+    //slider 
+	"slider-layout#slider-topbar": {
+		"children": [
+            "flex-layout.col#text-topbar-01",
+			"flex-layout.col#text-topbar-02"
+		],
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"autoplay": {
+				"timeout": 3000,
+				"stopOnHover": true
+			},
+			"blockClass":"deals-topbar",
+			"showNavigationArrows": "always",
+			"showPaginationDots": "never",
+			"infinite": true
+		}
+    },
+
+	//01
+	"flex-layout.col#text-topbar-01":{
+		"children":[
+			"rich-text#topbar-01"
+		],
+        "props":{            
+            "width": "100%",
+            "horizontalAlign": "center",
+            "verticalAlign": "middle"
+
+        }
+    },
+
+	"rich-text#topbar-01": {
+		"props": {
+            "blockClass":"topbar",
+			"text": "**Frete grátis** acima de R$ 200,00"
+		}
+    },
+
+	//02
+	"flex-layout.col#text-topbar-02":{
+		"children":[
+			"rich-text#topbar-02"
+		],
+        "props":{
+            "width": "100%",
+            "horizontalAlign": "center",
+            "verticalAlign": "middle"
+
+        }
+    },
+
+	"rich-text#topbar-02": {
+		"props": {
+            "blockClass":"topbar",
+			"text": "**Desconto de 10%** na primeira compra"
+		}
+    }
+}

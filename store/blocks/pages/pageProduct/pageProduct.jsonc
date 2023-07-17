@@ -1,0 +1,197 @@
+{
+	"store.product": {
+		"blocks": [
+		  	"responsive-layout.desktop",      
+		  	"responsive-layout.phone"
+		]
+	},
+
+	//DESKTOP
+	"responsive-layout.desktop": {
+		"children": [
+			"flex-layout.row#product-breadcrumb",      
+			"condition-layout.product#availability",			
+			"flex-layout.row#description",
+			"flex-layout.row#crosseling"			
+			//"flex-layout.row#imageDescription"
+			//"flex-layout.row#specification"
+		]
+	},
+	
+
+	"condition-layout.product#availability": {
+		"props": {
+			"conditions": [
+				{
+					"subject": "isProductAvailable"
+				}
+			],
+		  	"Then": "flex-layout.row#product-main",
+		  	"Else": "flex-layout.row#product-unavailability"
+		}
+	},
+	
+	"flex-layout.row#product-main": {
+		"props": {
+			"paddingBottom":"6",
+		  	"blockClass": ["wrap","product-main","bg-white"]
+		},
+		"children": [
+			"flex-layout.col#image-pdp",
+			"flex-layout.col#context-pdp"
+		]
+	},
+
+	//MOBILE
+	"responsive-layout.phone": {
+		"children": [
+			"flex-layout.row#product-breadcrumb",      
+			"condition-layout.product#availability-mobile",
+			"__fold__.experimentalLazyAssets",
+			"flex-layout.row#description",
+			"flex-layout.row#crosseling"
+			//"flex-layout.row#specification"
+		]
+	},
+
+	"condition-layout.product#availability-mobile": {
+		"props": {
+			"conditions": [
+				{
+					"subject": "isProductAvailable"
+				}
+			],
+		  	"Then": "flex-layout.row#product-main-mobile",
+		  	"Else": "flex-layout.row#product-unavailability"
+		}
+	},
+
+	"flex-layout.row#product-main-mobile": {
+		"props": {
+		  	"blockClass": ["wrap","product-main","wCol", "bg-white"],
+			"paddingBottom":"6"
+		},
+		"children": [
+			"flex-layout.col#image-pdp",
+			"flex-layout.col#context-pdp"
+		]
+	},
+
+
+	//image
+	"flex-layout.col#image-pdp": {
+		"children": ["stack-layout#image-pdp"],
+		"props": {
+			"horizontalAlign": "left",
+		  	"width": "50%"
+		}
+	},
+	
+	//info
+	"flex-layout.col#context-pdp": {
+		"props": {
+			"preventVerticalStretch": true,
+			"blockClass": "info-product",
+			"width": "50%"
+		},
+		"children": [
+			"flex-layout.row#product-highlights",
+			"flex-layout.row#product-name",
+			//"vtex.store-components:product-name",			
+			//"flex-layout.row#row-product-info",			
+			"flex-layout.row#pdp-price",	
+			"flex-layout.row#buy-button",
+			//"product-assembly-options",
+			"remaining",
+			//"flex-layout.row#description",
+			//"product-gifts",			
+			"shipping-simulator",			
+			//"flex-layout.row#icons",
+			"icon-properties",
+			"flex-layout.row#share"
+		]
+	},
+
+	"flex-layout.row#product-name": {
+		"props": {			
+			"preserveLayoutOnMobile": true  	
+		},
+		"children": [
+			"flex-layout.col#name-product",
+			"flex-layout.col#wishlist-product"
+		]
+	},
+
+	"flex-layout.col#name-product": {
+		"props": {			
+			"width":"90%",
+			"verticalAlign":"top"
+		},
+		"children": [
+			"vtex.store-components:product-name",			
+			"flex-layout.row#row-product-info"
+		]
+	},
+
+	"flex-layout.col#wishlist-product": {
+		"props": {			
+			"width":"10%",
+			"horizontalAlign":"right",
+			"verticalAlign":"top"
+		},
+		"children": [
+			"add-to-list-btn#pdp"
+		]
+	},
+	
+	"flex-layout.row#icons": {
+		"props": {
+			"paddingTop":"4",
+			"preventHorizontalStretch": true		  	
+		},
+		"children": [
+			"flex-layout.col#icons"
+		]
+	},
+	
+	"flex-layout.col#icons": {
+		"props": {
+			"preventVerticalStretch": true,
+			"blockClass": ["col-icons"]
+		},
+		"children": [
+			"icon-properties"
+		]
+	},
+	
+	//aviseme
+	"flex-layout.row#product-unavailability": {
+		"props": {
+		  	"blockClass": ["wrap","product-main"]
+		},
+		"children": [
+			"flex-layout.col#image-pdp",
+			"flex-layout.col#context-unavailability"
+		]
+	},
+	"flex-layout.col#context-unavailability": {
+		"props": {
+			"preventVerticalStretch": true,
+			"blockClass": "info-product"
+		},
+		"children": [
+			"vtex.store-components:product-name",			
+			"flex-layout.row#row-product-info",
+			"flex-layout.row#availability",			
+			//"flex-layout.row#share",
+			"rich-text#text-atendimento"
+		]
+	},
+  
+	"flex-layout.row#availability": {
+		"props": {
+			"blockClass": "message-availability"
+		},
+		"children": ["availability-notify"]
+	}
+}

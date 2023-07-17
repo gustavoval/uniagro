@@ -1,0 +1,37 @@
+$base: #3D3D3D;
+
+/*grid*/
+$container:1380px;
+$column: 16px;
+
+/*font weight*/
+$sLight:300;
+$sRegular:400;
+$sSemibold:600;
+$sBold:700;
+
+/*colors*/
+$primaryColor: #006B4F;
+$secondaryColor: #80FF9D;
+$text: #808080;
+$light:#F3F3F3;
+$border: #ddd;
+$contrast: #00C6D2;
+$button: #006B4F;
+$buttonHover:#008665;
+$link:#80FF9D;
+$linkHover:#64FF87;
+
+/*radius*/
+$radius: 4px;
+$radiusSmall: 2px;
+
+/*general*/
+$shadow: 0 2px 3px rgba(0,0,0,0.15);
+$transition: .12s linear;
+
+/*media*/
+$screen-tv:1920px; //tv
+$screen-dk:1440px; //notebook
+$screen-tb:1024px; //tablet
+$screen-mb:640px; //phone

@@ -1,0 +1,19 @@
+.product-identifier {    
+    .product-identifier__label,
+    .product-identifier__value{
+        color:$base;    
+        font-size: 14px;                    
+    }   
+}
+
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+    .product-identifier {    
+        padding: 0 0 12px;
+        margin: 0;
+        border-right:none;	        
+    }
+}

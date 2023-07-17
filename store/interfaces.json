@@ -1,0 +1,36 @@
+{
+	
+	
+	"consent-lgpd": {
+		"component": "ConsentLgpd"
+	},
+	"add-head":{
+		"component":"AddHead"
+	},
+	
+	"icon-properties": {
+		"component": "ShelfIcon"
+	},
+
+	"remaining": {
+		"component":"ProductRemaining"
+	},
+	"promo-cart": {
+		"component": "RulerMinicart"
+	},
+	"lista-receitas": {
+		"component": "ListReceitas"
+	},
+	
+	"close-subscription": {
+		"component": "CloseSubscription"
+	},
+
+	"show-receita": {
+		"component": "PagePost"
+	},
+
+	"neoassist":{
+		"component":"NeoAssist"
+	}
+}

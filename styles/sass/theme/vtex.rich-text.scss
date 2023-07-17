@@ -1,0 +1,43 @@
+//titles
+:global(.vtex-shelf-1-x-title--related-products),
+.heading--title-section {                		
+	display: inline-block;
+	font-weight: $sRegular;
+	font-family: 'Lobster', Helvetica, sans-serif;
+	font-size: 28px;						
+	margin: 0 0 20px;
+	text-align: center;
+	width: auto;
+	color: $base;
+	padding: 0;
+	
+
+	&::after {
+		content: "";
+		display: block;
+		height: 3px;
+		background-color: $primaryColor;
+		margin: 3px 0 0;
+	}
+}
+
+
+.wrapper--title-section {
+	width: 100%;	
+}
+	
+
+
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {	
+	
+	//titles
+	:global(.vtex-shelf-1-x-title--related-products),
+	:global(.vtex-store-components-3-x-productDescriptionTitle),
+	.heading--title-section {
+		font-size: 24px;	
+	}
+}

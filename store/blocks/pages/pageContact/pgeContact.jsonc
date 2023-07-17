@@ -1,0 +1,24 @@
+{
+  "store.custom#contact-us": {
+		"blocks": [						
+			"flex-layout.row#neoassist-wrap"
+		]
+	},
+	
+    "flex-layout.row#neoassist-wrap":{
+		"children":[      
+			"flex-layout.col#neoassist-content"
+		],
+		"props":{			
+			"paddingTop":"6",
+			"blockClass":["wrap","wCol"]
+		}
+	},
+
+	"flex-layout.col#neoassist-content":{
+		"children":[			
+			"neoassist"
+		],		
+		"title": "Div neoassist"
+	}
+}

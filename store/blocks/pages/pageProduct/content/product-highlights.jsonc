@@ -1,0 +1,12 @@
+{
+    "flex-layout.row#product-highlights": {
+		"props":{
+			"preventHorizontalStretch": true,	
+			"colGap":"2",		
+			"blockClass":"highlights"
+		},
+		"children":[			
+			"vtex.product-highlights@2.x:product-highlights#collection"
+		]
+	}
+}

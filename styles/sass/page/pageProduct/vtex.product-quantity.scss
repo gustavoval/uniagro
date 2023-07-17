@@ -1,0 +1,43 @@
+.quantitySelectorContainer--pdp-qty {
+	margin-bottom: 0;
+}
+.quantitySelectorStepper{
+  	margin: 0;
+
+	:global(.vtex-numeric-stepper-container){
+		height: 40px;
+		max-width: 110px;
+		column-gap: 5px;
+		align-items: center;
+	}
+  
+	:global(.vtex-numeric-stepper__minus-button),
+	:global(.vtex-numeric-stepper__plus-button){
+		border-width: 2px;
+		border-color: $primaryColor;
+		//background-color: $primaryColor;
+		background-color: #fff;
+		border-radius: 6px !important;		
+		height: 26px;
+		width: 26px !important;				
+		min-width: inherit;	
+		border-radius: $radius;	
+		color: $primaryColor;
+		
+		&:hover{
+			color: #fff;
+			background-color: $primaryColor;
+		}
+	}
+	:global(.vtex-numeric-stepper__input){
+		width: 100%;						
+		font-size: 15px;
+		font-weight: $sBold;
+		padding: 0;
+		margin: 0;
+		height: 40px;
+		border-radius: $radius;	
+		background: #e3e4e6;			
+	}
+}
+

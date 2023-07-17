@@ -1,0 +1,23 @@
+.flexRow--horizontal-menu {
+    background-color: #fff;        
+    box-shadow: 0 30px 40px -4px rgb(13 46 123 / 8%);
+}
+.flexRowContent--horizontal-menu {        
+	//justify-content: space-between;
+    align-items: center;
+    //padding-bottom: 5px;
+}
+
+.flexCol--menu-mobile-open-menu {
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 0 16px;
+}
+.lexColChild--mobile-menu__wrapper {
+    padding: 15px 0;
+}
+.flexCol--mobile-menu__wrapper{
+    //padding-top: 10px;
+	//border-top: 1px solid #ddd;
+}

@@ -1,0 +1,137 @@
+{
+    "flex-layout.col#institucional-menu":{
+		"children":[						
+			"rich-text#title-menu-i-1",
+			"vtex.menu@2.x:menu#menu-i-1",
+			"rich-text#title-menu-i-2",
+			"vtex.menu@2.x:menu#menu-i-2"
+		],
+		"props":{
+			"horizontalAlign":"left",
+			"width":"22%",
+			"blockClass": "col-institucional-menu"
+		},
+		"title": "Col - Menu"
+	},
+
+    //title
+	"rich-text#title-menu-i-1":{
+		"props":{
+			"text":"**Institucional**",
+			"blockClass":"i-nav-title"
+		}
+	},
+
+	//menu
+	"vtex.menu@2.x:menu#menu-i-1": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": ["i-nav-items"],
+			"items":[				
+				{				
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/quem-somos",
+						"noFollow": false,
+						"tagTitle": "Quem somos",
+						"text": "Quem somos"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "external",
+						"href": "https://br.linkedin.com/company/selecionadosuniagro",
+						"noFollow": false,
+						"tagTitle": "Trabalhe conosco",
+						"text": "Trabalhe conosco"
+					}
+				}
+			]
+		}
+	},
+
+    //title
+	"rich-text#title-menu-i-2":{
+		"props":{
+			"text":"**Suporte**",
+			"blockClass":"i-nav-title"
+		}
+	},
+
+    //menu
+	"vtex.menu@2.x:menu#menu-i-2": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": ["i-nav-items"],
+			"items":[
+				
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/",
+						"noFollow": false,
+						"tagTitle": "Mapa do Site",
+						"text": "Mapa do Site"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/",
+						"noFollow": false,
+						"tagTitle": "Política de Privacidade",
+						"text": "Política de Privacidade"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/",
+						"noFollow": false,
+						"tagTitle": "Trocas e Devoluções",
+						"text": "Trocas e Devoluções"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/",
+						"noFollow": false,
+						"tagTitle": "Politica de Entrega",
+						"text": "Politica de Entrega"
+					}
+				},
+				{
+					"type": "custom",
+					"iconId": null,
+					"highlight": false,
+					"itemProps": {
+						"type": "internal",
+						"href": "/",
+						"noFollow": false,
+						"tagTitle": "Política de entrega",
+						"text": "Política de entrega"
+					}
+				}
+			]
+		}
+	}
+}

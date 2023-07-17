@@ -1,0 +1,34 @@
+{
+	"flex-layout.row#copyright":{
+		"children":[
+			//"rich-text#copyright"
+			"flex-layout.col#copyright"
+		],
+		"props":{  			
+			"preserveLayoutOnMobile": true,
+			"blockClass": ["wrap","copyright"]
+		}
+	},
+
+	"flex-layout.col#copyright":{
+		"children":[
+			"rich-text#copyright"			
+		],
+		"props":{  
+			"width":"100%",
+			"horizontalAlign":"center",
+			"blockClass": ["wrap","copyright"]
+		}
+	},
+	
+	"rich-text#copyright":{
+		"props":{
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"text": "Copyright® 2022 - **ouvidoria@uniagro-ind.com.br |  Empresa | CNPJ: CPNJ: 94.964.889/0001-70 | Endereço**",
+			"blockClass": "copyright"
+		}
+	}
+}
+
+

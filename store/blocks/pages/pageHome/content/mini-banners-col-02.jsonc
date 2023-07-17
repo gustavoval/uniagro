@@ -1,0 +1,117 @@
+/*
+TV BANNER 2 COLUMN
+*/
+{
+	
+
+	//banner
+	"flex-layout.row#mini-banners-col-02":{
+		"children":[
+            "flex-layout.col#banner-col-02-01",
+            "flex-layout.col#banner-col-02-02"
+			//"image#banner-col-02-01",
+            //"image#banner-col-02-02"
+		],
+		"props":{            
+		  	"blockClass":["wCol","no-slider","card"]
+		},
+		"title":"Banners 2 colunas 01"
+	},
+
+    //col
+    "flex-layout.col#banner-col-02-01":{
+		"children":[
+            "image#banner-col-02-01"
+		],
+        "props":{
+            "verticalAlign":"middle"
+        }
+	},
+    "flex-layout.col#banner-col-02-02":{
+		"children":[
+            "image#banner-col-02-02"
+		],
+        "props":{
+            "verticalAlign":"middle"
+        }
+	},
+
+    // images
+	"image#banner-col-02-01":{
+        "props":{	
+            "blockClass": ["banner"],		            
+            "src":"assets/banners/home/dev/full-banner.jpg",
+            "link":{
+                "url":""
+            }
+        }
+    },
+
+    "image#banner-col-02-02":{
+        "props":{	
+            "paddingTop": "4",	
+            "blockClass": "banner",	            
+            "src":"assets/banners/home/dev/full-banner.jpg",
+            "link":{
+                "url":""
+            }
+        }
+    },
+
+
+
+    // row 2
+	"flex-layout.row#r2-mini-banners-col-02":{
+		"children":[
+            "flex-layout.col#r2-banner-col-02-01",
+            "flex-layout.col#r2-banner-col-02-02"
+			//"image#r2-banner-col-02-01",
+            //"image#r2-banner-col-02-02"
+		],
+		"props":{
+            "paddingTop": "4",
+		  	"blockClass":["wCol","no-slider"]
+		},
+		"title":"Banners 2 colunas 02"
+	},
+
+    //col
+    "flex-layout.col#r2-banner-col-02-01":{
+		"children":[
+            "image#r2-banner-col-02-01"
+		],
+        "props":{
+            "verticalAlign":"middle"
+        }
+	},
+    "flex-layout.col#r2-banner-col-02-02":{
+		"children":[
+            "image#r2-banner-col-02-02"
+		],
+        "props":{
+            "verticalAlign":"middle"
+        }
+	},
+
+    // images
+	"image#r2-banner-col-02-01":{
+        "props":{	
+            "blockClass": ["banner","rd"],		            
+            "src":"assets/banners/home/dev/full-banner.jpg",
+            "link":{
+                "url":"/smarteck"
+            }
+        }
+    },
+
+    "image#r2-banner-col-02-02":{
+        "props":{	
+            "paddingTop": "4",	
+            "blockClass": ["banner","rd"],           
+            "src":"assets/banners/home/dev/full-banner.jpg",
+            "link":{
+                "url":"/eletrica/acessorios-eletricos"
+            }
+        }
+    }
+}

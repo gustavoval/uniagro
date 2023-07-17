@@ -1,0 +1,150 @@
+{
+    // product buy
+	"flex-layout.row#buy-button": {
+		"props": {     
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"horizontalAlign": "left",
+			"colGap":"5",   
+			"marginTop":"4",
+			"blockClass": "row-buyButton"
+		},
+		"children": [
+			"flex-layout.col#pdp-quantity",
+			"flex-layout.col#pdp-buybutton"
+			//"flex-layout.col#pdp-subscription"			
+			//"flex-layout.col#pdp-buynow"
+		]
+	},
+
+	//subscription
+	"flex-layout.col#pdp-subscription":{
+		"children":["modal-trigger#subscription"],
+		"props":{
+			"verticalAlign":"middle"
+		}
+	},
+
+	"modal-trigger#subscription": {
+		"children": [		  	
+		  "rich-text#subscription",		  		  
+		  "modal-layout#subscription"
+		]
+	},
+
+	"modal-header#subscription":{
+        "props":{
+            "showCloseButton": true
+        }
+    },
+
+	"rich-text#subscription": {
+		"props": {
+			"blockClass":"buy-button-sub",
+		  	"text": "**Assinar** (10% OFF)"
+		}
+	},
+	"modal-layout#subscription": {
+		"children": [		
+			"modal-header#subscription",
+			"flex-layout.row#sub-deals",
+			"vtex.store-components:product-name",
+			"product-images",
+			"rich-text#qty-subscription",
+			"product-quantity",
+		  	//"rich-text#modal-subscription",
+			"product-assembly-options#open",
+			"add-to-cart-button#sub"
+		],
+		"props":{
+			"blockClass":"modal-subscription"
+		}
+	},
+
+	"add-to-cart-button#sub":{
+		"props":{
+			"text": "Adicionar",
+			"isOneClickBuy": false,
+			"addToCartFeedback": "customEvent",
+      		"customPixelEventId": "add-to-cart-button",
+			"blockClass": "buy-button"
+		}
+	},
+
+	"product-assembly-options#open": {
+		"props":{
+		  	"initiallyOpened": "always"
+		 },
+		"children": [		  
+		  	"assembly-option-input-values"
+			
+		]
+	},
+
+	"assembly-option-input-values": {
+		"props":{
+		  	"optionsDisplay": "box"
+		}
+	},
+	
+
+	"flex-layout.row#sub-deals": {
+		"props": {
+			"horizontalAlign": "center",			
+			"blockClass": "sub-deals"
+		},
+		"children": [
+			"rich-text#sub-deals"
+		]
+	},
+	"rich-text#sub-deals": {
+		"props": {
+		  	"text": "Economize até 10% \n\n Cancele quando quiser \n\n Frete grátis \n\n Receba em casa",
+			"blockClass":"sub-deals"
+		}
+	},
+
+	"rich-text#qty-subscription": {
+		"props": {
+			"textAlignment": "CENTER",
+    		"textPosition": "CENTER",
+		  	"text": "Selecione a quantidade e frequencia \n que deseja receber",
+			"blockClass":"qty-subscription"
+		}
+	},
+	
+	//qty
+	"flex-layout.col#pdp-quantity":{
+		"children":["product-quantity"],
+		"props":{
+			"verticalAlign":"middle"
+		}
+	},
+	
+	"product-quantity":{
+		"props":{
+			"showLabel": false,
+			"size": "large",
+			"quantitySelectorStep": "singleUnit",
+			"blockClass":"pdp-qty"
+		}
+	},
+
+	//buy button
+	"flex-layout.col#pdp-buybutton":{
+		"children":["add-to-cart-button#pdp"],
+		"props":{
+			"blockClass": "col-buy-button"
+		}
+	},
+	
+	"add-to-cart-button#pdp":{
+		"props":{
+			"text": "Comprar agora",
+			"isOneClickBuy": false,
+			"blockClass": "buy-button"
+		}
+	}
+
+	
+}

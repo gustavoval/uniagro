@@ -1,0 +1,59 @@
+{
+	"flex-layout.row#newsletter":{
+		"props":{				
+			"blockClass": ["newsletter", "tpl-2"]
+		},
+		"children": [  
+			"flex-layout.col#title-newsletter",
+			"flex-layout.col#newsletter"
+		],
+		"title":"Newsletter"
+	},
+
+	"flex-layout.col#title-newsletter":{
+		"children":[
+			"rich-text#title-newsletter"
+		],
+		"props":{
+			"verticalAlign": "middle"
+			
+		}
+	},
+
+	//title
+	"rich-text#title-newsletter":{
+		"props":{
+			"text": "### Newsletter \n\n Receba ofertas recomendadas e preços exclusivos!",
+			"blockClass": "txt-newsletter"
+		}
+	},
+	
+	//newsletter
+	"flex-layout.col#newsletter": {
+		"children": [
+		  	"newsletter-form"
+		],
+		"props": {
+			"horizontalAlign": "left"
+			
+		}
+	},
+	
+	"newsletter-form": {
+		"children": [
+			"newsletter-input-name",
+			"newsletter-input-email",
+			"newsletter-submit"
+		]
+	},
+	"newsletter-input-email":{
+		"props": {
+		  	"placeholderText": "Digite aqui seu e-mail"
+		}
+	},
+	"newsletter-submit":{
+		"props": {
+		  	"submitButtonLabel": "enviar"
+		}
+	}
+}

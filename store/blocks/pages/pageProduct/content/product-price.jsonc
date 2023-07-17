@@ -1,0 +1,49 @@
+{
+    //preco de
+	"flex-layout.row#pdp-price": {
+		"props": {
+			"blockClass": "row-prices",
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		},
+		"children": [			
+			"flex-layout.row#promo-price",
+			"product-selling-price",
+			"product-installments"
+		]
+	},
+	
+	//off
+	"flex-layout.col#pdp-off": {
+		"props":{
+			"verticalAlign":"middle"
+		},
+		"children":[
+			"product-price-savings#pdp"
+		]
+	},
+	"product-price-savings#pdp": {
+        "props": {
+            "message": "{savingsPercentage} Off",
+            "blockClass": "productPercentage"
+        }
+    },
+
+	//preco de
+	"flex-layout.row#promo-price": {
+		"props": {
+			"blockClass": "row-selling-price",
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"paddingTop": "2",
+			"paddingBottom":"2",
+			"colGap":"3"
+		},
+		"children": [
+			"product-list-price",
+			"product-price-savings#pdp"
+		]
+	}
+	
+	
+}

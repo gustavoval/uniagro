@@ -1,0 +1,20 @@
+{
+    //col
+    "flex-layout.col#logo":{
+        "children":["logo#header"],
+        "props":{
+            //"blockClass":["col-logo"],
+            "verticalAlign": "middle"
+        }
+    },
+
+    //component
+    "logo#header":{
+        "props":{
+            "title":"Logo",
+            "href":"/",
+            "url":"assets/logo.svg",
+            "blockClass":["header-logo"]
+        }
+    }
+}

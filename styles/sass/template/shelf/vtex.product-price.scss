@@ -1,0 +1,113 @@
+
+
+//preco de
+.listPrice--summary {
+    display: block;
+    color: #949494;
+    margin-top: 0;
+    text-align: left;
+    line-height: 1;
+    font-size: 13px;
+    margin-right: 6px;
+}
+
+//off nominal
+.savings--summary {
+    display: block;
+    font-size: 12px;
+    letter-spacing: -.5px;
+    color: $contrast;
+    text-transform: lowercase;    
+    text-align: left;
+
+    .currencyCode--summary {
+        text-transform: none;
+    }
+    .currencyContainer--summary {
+        font-weight: $sBold;
+    }
+}
+
+
+//off percentual
+.savings--summaryPercentage {    
+    font-size: 11px;
+    display: flex;
+    width: 74px;
+    height: 22px;
+    align-items: center;
+    justify-content: center;
+    background-color: $base;    
+    color: #fff;
+    font-weight: $sBold;
+    padding: 0;
+    border-radius: 0 $radius $radius 0;
+    line-height: 1;
+
+    .savingsPercentage--summaryPercentage {
+        margin-right: 4px;
+    }
+
+    &::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        margin-right: 5px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: block;
+    }
+}
+
+// preco por
+.sellingPriceValue--summary{
+    display: block;
+    line-height: 1;        
+    padding: 6px 0 0;
+    text-align: left;
+    letter-spacing: -.5px;
+    color: $base;    
+    font-size: 21px;
+    font-weight: $sBold;
+}
+
+//parcelamento
+.installments--summary{    
+    font-size: 14px;
+    margin-top: 4px;
+    line-height: 1;
+    padding: 0 0 10px;      
+    justify-content: flex-start;
+    color: #949494;
+    text-align: left;
+    display: block;
+    
+    
+    .currencyContainer--summary
+    {
+        color: $primaryColor;
+    }
+}
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+@media(max-width: $screen-mb) {
+    //off
+    .savings--summary {
+        display: none;
+    }
+
+    .installments--summary {
+        font-size: 13px;
+        letter-spacing: -.5px;
+    }
+    
+    .sellingPriceValue--summary{
+        font-size: 17px;
+        padding-top: 2px;
+    }
+    .listPrice--summary  {
+        font-size: 12px;
+    }
+}

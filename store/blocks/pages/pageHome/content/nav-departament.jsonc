@@ -1,0 +1,128 @@
+{
+	//title	
+	"flex-layout.row#title-nav-departament": {
+        "children": ["rich-text#title-nav-departament"],
+        "props":{			
+            "blockClass": ["wrap","card"]
+        },
+		"title":"Diferenciais: Título"
+    },
+    
+    "rich-text#title-nav-departament": {
+        "props": {
+			"textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Diferenciais",
+            "blockClass": ["title-section"]
+        }
+    },
+
+	//POST 03
+	"flex-layout.row#post-nav-departament": {
+		"children": [
+			"flex-layout.col#post-nav-01",
+			"flex-layout.col#post-nav-02",
+			"flex-layout.col#post-nav-03",
+			"flex-layout.col#post-nav-04"
+		],
+		"props": {			
+			"blockClass": ["wrap", "wCol", "nav-departament"]			
+		},
+        "title":"Diferenciais: Conteúdo"
+	},
+	
+    //1
+	"flex-layout.col#post-nav-01": {
+		"children": [	
+            "image#image-nav-01",		
+			"rich-text#text-nav-01"
+		],
+		"props":{
+            "blockClass":["box"],
+			"horizontalAlign": "center"
+		}
+	},
+    "image#image-nav-01":{
+        "props":{			
+            "src":"assets/brands/brand-0001.jpg"
+        }
+    },    
+	"rich-text#text-nav-01": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "### Selecionamos na origem",
+			"blockClass": "txt-nav"
+		}
+	},
+    //2
+	"flex-layout.col#post-nav-02": {
+		"children": [	
+            "image#image-nav-02",		
+			"rich-text#text-nav-02"
+		],
+		"props":{
+            "blockClass":["box"],
+			"horizontalAlign": "center"
+		}
+	},
+    "image#image-nav-02":{
+        "props":{			
+            "src":"assets/brands/brand-0002.jpg"            
+        }
+    },    
+	"rich-text#text-nav-02": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "### Preparamos com amor",
+			"blockClass": "txt-nav"
+		}
+	},
+    //3
+	"flex-layout.col#post-nav-03": {
+		"children": [	
+            "image#image-nav-03",		
+			"rich-text#text-nav-03"
+		],
+		"props":{
+            "blockClass":["box"],
+			"horizontalAlign": "center"
+		}
+	},
+    "image#image-nav-03":{
+        "props":{			
+            "src":"assets/brands/brand-0003.jpg"
+        }
+    },    
+	"rich-text#text-nav-03": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "### Apoiamos a sustentabilidade",
+			"blockClass": "txt-nav"
+		}
+	},
+    //4
+	"flex-layout.col#post-nav-04": {
+		"children": [	
+            "image#image-nav-04",		
+			"rich-text#text-nav-04"
+		],
+		"props":{
+            "blockClass":["box"],
+			"horizontalAlign": "center"
+		}
+	},
+    "image#image-nav-04":{
+        "props":{			
+            "src":"assets/brands/brand-0004.jpg"
+        }
+    },    
+	"rich-text#text-nav-04": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "### Queremos um futuro + orgânico",
+			"blockClass": "txt-nav"
+		}
+	}
+
+	
+}

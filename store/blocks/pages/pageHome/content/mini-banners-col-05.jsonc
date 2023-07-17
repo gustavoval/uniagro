@@ -1,0 +1,104 @@
+/*
+TV BANNER 3 COLUMN
+*/
+{
+	//title
+	
+	"flex-layout.row#title-mini-banners-col-05": {
+        "children": ["rich-text#title-mini-banners-col-05"],
+        "props":{			
+            "blockClass": ["wrap","card"]
+        },
+		"title":"Instagram: Título"
+    },
+    
+    "rich-text#title-mini-banners-col-05": {
+        "props": {
+			"textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Instagram",
+            "blockClass": ["title-section"]
+            //"blockClass": ["center"]
+        }
+    },
+
+	//collection
+	"flex-layout.row#mini-banners-col-05":{
+		"children":[
+		  	"list-context.image-list#mini-banners-col-05"
+		],
+		"props":{			
+		  	"blockClass":["wrap","insta"]
+		},
+		"title":"Instagram: Conteúdo"
+	  },
+	
+	  "list-context.image-list#mini-banners-col-05": {
+		"children":["slider-layout#slider-mini-banners-col-05"],
+		"props":{
+			//"preload":true,
+			"blockClass":["mini-banners"],
+			"images":[
+				{
+					"image": "assets/banners/insta/insta-1.jpg",
+					"description": "",
+					"link":{
+						"url": "https://www.instagram.com/p/CtNH-x5OTl8/"
+					}
+				},
+				{
+					"image": "assets/banners/insta/insta-2.jpg",
+					"description": "",
+					"link":{
+						"url": "https://www.instagram.com/p/CtHXIANOI54/"
+					}
+				},
+				{
+					"image": "assets/banners/insta/insta-3.jpg",
+					"description": "",
+					"link":{
+						"url": "https://www.instagram.com/p/CszOCLnP_Kg/"
+					}
+				},
+                {
+					"image": "assets/banners/insta/insta-4.jpg",
+					"description": "",
+					"link":{
+						"url": "https://www.instagram.com/p/CseGXLVO9nQ/"
+					}
+				},
+                {
+					"image": "assets/banners/insta/insta-5.jpg",
+					"description": "",
+					"link":{
+						"url": "https://www.instagram.com/p/CrmKls3uLRg/"
+					}
+				}
+			]
+		}
+	},
+
+	//slider
+	"slider-layout#slider-mini-banners-col-05": {
+		"props": {
+			"blockClass":["wCol","banner","carousel","rd"],	
+			"itemsPerPage": {
+				"desktop": 5,
+				"tablet": 2,
+				"phone": 1
+			},
+			"centerModeSlidesGap":8,
+			"centerMode": {
+				"desktop": "disabled",
+				"tablet": "disabled",
+				"phone": "to-the-left"
+			},
+			"infinite": false,
+			"fullWidth": true,
+			"showNavigationArrows": "desktopOnly",
+			"showPaginationDots": "mobileOnly"
+		},
+		"title":"Instagram: Carrossel"
+	}
+	
+}

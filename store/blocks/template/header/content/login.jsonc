@@ -1,0 +1,74 @@
+{
+    //col
+    "flex-layout.col#login":{
+        "children":[
+          	"challenge-block#authUser"
+        ],
+        
+        "props":{
+            "blockClass":["col-login"],
+            "verticalAlign": "middle"
+        }
+    },
+
+    
+    "challenge-block#authUser": {
+		"blocks": [
+			"challenge-content#logged",
+			"challenge-fallback#login"
+		]
+    },
+    "challenge-content#logged": {
+		"children": [
+			"login"
+		]
+    },
+    "challenge-fallback#login": {
+		"children": [
+			"modal-trigger#login"
+		]
+    },
+    "modal-trigger#login": {
+		"children": [
+			"rich-text#login-cad",
+			"modal-layout#login"
+		],
+		"props": {
+			"blockClass": "login-trigger"
+		}
+    },
+    
+    "rich-text#login-cad": {
+		"props": {
+			"textPosition":"CENTER",
+			"textAlignment":"LEFT",
+			"text": "Olá! seja bem vindo",
+			"blockClass": "login-autentication"
+		}
+    },
+    "modal-layout#login": {
+		"children": [
+			"login-content"
+		]
+    },
+    "login":{
+		"props":{
+			"showIconProfile": false,            
+			"hideIconLabel": false,
+			"googleOneTapAlignment": "right",
+			"iconLabel":"Olá, seja bem vindo! Entre ou cadastre-se"
+		}
+  	},
+    "login-content": {
+		"props": {
+			"defaultOption": 1,
+			"optionsTitle": "Login",
+			"emailAndPasswordTitle": "Entre com seu e-mail",
+			"emailPlaceholder": "Entre com seu email",
+			"passwordPlaceholder": "Senha",
+			"showPasswordVerificationIntoTooltip": false,
+			"termsAndConditions": "Ao continuar, você aceita nossos termos e condições."
+		}
+    }
+    
+}

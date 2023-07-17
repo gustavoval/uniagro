@@ -1,0 +1,236 @@
+{
+    "store.custom#custom-assinaura": {
+      "blocks": ["search-result-layout.customQuery#assinatura"]
+    },
+    "search-result-layout.customQuery#assinatura": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 50,
+                "queryField": "137",
+                "mapField": "productClusterIds",
+                "skusFilter": "ALL_AVAILABLE",
+                "simulationBehavior": "skip",
+                "__unstableProductOriginVtex": true
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#assinatura",
+            "search-result-layout.mobile#assinatura",
+            "search-not-found-layout"
+        ]
+    },
+
+    "search-result-layout.mobile#assinatura": {
+        "children": [
+            "flex-layout.row#main-banners-assinatura",        
+            "flex-layout.row#como-funciona",        
+            "flex-layout.row#result-assinatura",
+            "flex-layout.row#ajuda-texto"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": true,
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    },
+  
+    "search-result-layout.desktop#assinatura": {
+        "children": [
+            "flex-layout.row#main-banners-assinatura",        
+            "flex-layout.row#como-funciona",        
+            "flex-layout.row#result-assinatura",
+            "flex-layout.row#ajuda-texto"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": true,
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    },
+
+    "flex-layout.row#main-banners-assinatura": {
+        "children": [
+            "image#main-banners-assinatura"
+        ],
+        "props":{
+            "fullWidth": true,
+            "blockClass": ["full-banner"]
+          
+        }
+    },
+      
+    "image#main-banners-assinatura":{
+        "props":{                  
+            "src": "assets/banners/asinatura.jpg",
+            "blockClass":"banner"
+        }
+    },
+
+    "flex-layout.row#como-funciona": {
+        "children": [
+            "flex-layout.col#como-funciona"
+            
+        ],
+        "props":{            
+            "blockClass": ["como-funciona"]
+          
+        }
+    },
+    "flex-layout.col#como-funciona": {
+		"children": [	
+            "rich-text#como-funciona-1",
+            "rich-text#como-funciona-2",
+            "flex-layout.row#como-funciona-linha"
+		],
+		"props":{
+			"horizontalAlign": "center"
+		}
+	},
+    "rich-text#como-funciona-1": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "## Entenda como funciona",
+			"blockClass": "title-section"
+		}
+	},
+    "rich-text#como-funciona-2": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "No clube de compras você recebe, todo mês, “X” produtos \n escolhidos a dedo do catálogo Uniagro!",
+			"blockClass": "txt-funciona"
+		}
+	},
+    "flex-layout.row#como-funciona-linha": {
+        "children": [
+            "flex-layout.col#como-linha-1",
+            "flex-layout.col#como-linha-2",
+            "flex-layout.col#como-linha-3"
+        ],
+        "props":{            
+            "blockClass": ["linha"]
+        }
+    },
+    "flex-layout.col#como-linha-1": {
+		"children": [	
+            "rich-text#como-funciona-linha-1"
+		],
+		"props":{
+			"horizontalAlign": "center"
+		}
+	},
+    "rich-text#como-funciona-linha-1": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "**1** \n\n ### Você escolhe! \n Selecione os produtos.",
+			"blockClass": "linha-funciona"
+		}
+	},
+    "flex-layout.col#como-linha-2": {
+		"children": [	
+            "rich-text#como-funciona-linha-2"
+		],
+		"props":{
+			"horizontalAlign": "center"
+		}
+	},
+    "rich-text#como-funciona-linha-2": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "**2** \n\n ### Defina um intervalo \n Semanal, quinzenal ou mensal, do jeito que você preferir.",
+			"blockClass": "linha-funciona"
+		}
+	},
+    "flex-layout.col#como-linha-3": {
+		"children": [	
+            "rich-text#como-funciona-linha-1"
+		],
+		"props":{
+			"horizontalAlign": "center"
+		}
+	},
+    "rich-text#como-funciona-linha-3": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "**3** \n\n ### Cancele quando quiser \n Cancele grátis a suaassinatura.",
+			"blockClass": "linha-funciona"
+		}
+	},
+
+
+    "flex-layout.row#result-assinatura": {
+        "children": [
+            "flex-layout.col#list-assinatura"
+        ],
+        "props":{            
+            "blockClass": ["list-products-assinatura"]          
+        }
+    },
+
+    "flex-layout.col#list-assinatura": {
+		"children": [	
+            "flex-layout.row#fetchprevious",
+			"flex-layout.row#productsass",
+			"flex-layout.row#fetchmore"
+		],
+		"props":{
+			"width":"100%",
+            "blockClass": ["list-products-assinatura"]
+		}
+	},
+
+    "flex-layout.row#productsass": {
+		"children": ["search-content#assinatura"]
+	},
+
+	"search-content#assinatura": {
+		"blocks": [
+			"gallery",
+			"not-found"
+		]
+	},
+
+
+    "flex-layout.row#ajuda-texto": {
+        "children": [
+            "flex-layout.col#ajuda-texto"
+            
+        ],
+        "props":{            
+            "blockClass": ["ajuda-texto"]
+          
+        }
+    },
+    "flex-layout.col#ajuda-texto": {
+		"children": [	
+            "rich-text#ajuda-texto-1",
+            "rich-text#ajuda-texto-2",
+            "flex-layout.row#como-funciona-linha"
+		],
+		"props":{
+			"horizontalAlign": "center"
+		}
+	},
+    "rich-text#ajuda-texto-1": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "## Entenda como funciona",
+			"blockClass": "title-section"
+		}
+	},
+    "rich-text#ajuda-texto-2": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "No clube de compras você recebe, todo mês, “X” produtos \n escolhidos a dedo do catálogo Uniagro!",
+			"blockClass": "txt-funciona"
+		}
+	}
+}
+  

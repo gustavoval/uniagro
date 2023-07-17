@@ -1,0 +1,11 @@
+{
+    
+    //col
+    "flex-layout.col#button-drawer-sticky":{
+        "children":["drawer#menu-drawer"],
+        "props":{
+            "blockClass":["drawer-sticky"],
+            "verticalAlign": "middle"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    //row
+    "flex-layout.row#crosseling":{
+		"children":[
+			"shelf.relatedProducts#View"
+		],
+		"props":{
+			//"marginTop":"8",
+            "paddingTop":"7",
+            "paddingBottom":"7",
+			"blockClass": ["wrap","crosseling"]
+		}
+	},
+
+    //component
+	"shelf.relatedProducts#View": {
+		"blocks": ["product-summary.shelf"],
+		"props": {
+		"recommendation": "editor.relatedProducts.view",
+		"productList": {
+			"maxItems": 12,
+			"minItemsPerPage": 2,
+			"itemsPerPage":6,
+			"arrows": true,
+			"titleText": "Quem comprou, comprou também"
+		},
+		"showPaginationDots": "mobileOnly",
+		"context": {
+			"maxItemsPerPage": 4,
+			"hideUnavailableItems": true
+		},      
+		"blockClass": ["related-products"]
+		}
+	}
+}

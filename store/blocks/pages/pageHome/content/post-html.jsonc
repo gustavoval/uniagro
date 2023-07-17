@@ -1,0 +1,128 @@
+{
+	//title	
+	"flex-layout.row#title-post-html-03": {
+        "children": ["rich-text#title-post-html-03"],
+        "props":{			
+            "blockClass": ["wrap"]
+        },
+		"title":"Receitas: Título"
+    },
+    
+    "rich-text#title-post-html-03": {
+        "props": {
+			"textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Confira nossas Receitas",
+            "blockClass": ["title-section"]
+        }
+    },
+	
+	"flex-layout.row#post-html-03": {
+		"children": [
+			"slider-layout#post-html-03"
+		],
+		"props": {			
+			"blockClass": ["wrap","post", "post-03"]			
+		},
+        "title":"Receitas: Conteúdo"
+	},
+
+	"slider-layout#post-html-03": {
+		"children": [
+			"flex-layout.col#post-blog-01",
+			"flex-layout.col#post-blog-02",
+			"flex-layout.col#post-blog-03"
+			
+		],
+		"props": {
+			"blockClass":"wCol",
+			"itemsPerPage": {
+				"desktop": 3,
+				"tablet": 2,
+				"phone": 1
+			},			
+			"showNavigationArrows": "desktopOnly",
+			"showPaginationDots": "mobileOnly",
+			"infinite": false
+		}
+	},
+    //1
+	"flex-layout.col#post-blog-01": {
+		"children": [	
+            "image#image-blog-01",		
+			"rich-text#text-blog-01"
+		],
+		"props":{
+			"horizontalAlign": "center"
+		}
+	},
+    "image#image-blog-01":{
+        "props":{			
+            "src":"assets/banners/home/dev/banner-col-4.jpg",       
+			"blockClass":["banner","rd"],     
+            "link":{
+                "url":"/"
+            }
+        }
+    },    
+	"rich-text#text-blog-01": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "## What is Lorem Ipsum? \n\n Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+			"blockClass": "txt-blog"
+		}
+	},
+    //2
+	"flex-layout.col#post-blog-02": {
+		"children": [	
+            "image#image-blog-02",		
+			"rich-text#text-blog-02"
+		],
+		"props":{
+			"horizontalAlign": "center"
+		}
+	},
+    "image#image-blog-02":{
+        "props":{			
+            "src":"assets/banners/home/dev/banner-col-4.jpg",    
+			"blockClass":["banner","rd"],             
+            "link":{
+                "url":"/"
+            }
+        }
+    },    
+	"rich-text#text-blog-02": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "## Why do we use it? \n\n Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+			"blockClass": "txt-blog"
+		}
+	},
+    //3
+	"flex-layout.col#post-blog-03": {
+		"children": [	
+            "image#image-blog-03",		
+			"rich-text#text-blog-03"
+		],
+		"props":{
+			"horizontalAlign": "center"
+		}
+	},
+    "image#image-blog-03":{
+        "props":{			
+            "src":"assets/banners/home/dev/banner-col-4.jpg",
+			"blockClass":["banner","rd"],            
+            "link":{
+                "url":"/"
+            }
+        }
+    },    
+	"rich-text#text-blog-03": {
+		"props": {
+			"textAlignment": "CENTER",
+			"text": "## Where does it come from? \n\n Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+			"blockClass": "txt-blog"
+		}
+	}
+    
+}

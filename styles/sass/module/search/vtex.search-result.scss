@@ -1,0 +1,47 @@
+
+
+
+//auto complete
+:global(.vtex-search-2-x-biggy-autocomplete) {
+
+    //products (shelf)
+    :global(.vtex-search-2-x-tileListList) {
+        display: block !important;
+        padding: 0 15px !important;
+    }
+
+    :global(.vtex-product-summary-2-x-container) {
+        border-color: #eee;
+        box-shadow: 0 4px 12px rgb(13 46 123 / 8%);        
+    }
+    
+    :global(.vtex-product-summary-2-x-containerNormal) {
+        max-width: inherit !important;
+        width: 100%;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    :global(.vtex-product-summary-2-x-nameContainer) {
+        padding: 0 !important;
+    }
+    :global(.vtex-product-price-1-x-currencyContainer--summary) {
+        font-size: 14px;        
+    }
+    //off
+    :global(.vtex-product-price-1-x-savings--searchPercentage) {
+        position: absolute;
+        display: inline-block;
+        bottom: 10px;
+        right: 10px;
+        background-color: $secondaryColor;
+        color: #fff;
+        font-size: 12px;
+        font-weight: $sBold;
+        padding: 3px 6px;
+        border-radius: $radiusSmall 0 $radiusSmall 0;
+    }
+    
+}
+
+
+

@@ -1,0 +1,93 @@
+/*
+BANNER + COLLECTION
+*/
+{
+    //layout
+    "flex-layout.row#collection-shelf-02": {
+        "children": [            
+            "flex-layout.col#col-banner-shelf-02",            
+            "flex-layout.col#col-shelf-02"
+        ],
+        "props":{            
+            "horizontalAlign": "center",            
+            "blockClass": ["wrap","wCol","shelf-bg", "card"]
+        },
+        "title": "Row - Main banner and collection"
+    },
+
+    
+
+    "flex-layout.col#col-banner-shelf-02":{  
+        "children":[
+            "image#img-banner-shelf-02"
+        ],
+        "props":{
+            "horizontalAlign":"center",
+            "verticalAlign":"middle",                        
+            "width":"40%"
+        }
+    },
+
+    "image#img-banner-shelf-02":{
+		"props":{
+            "blockClass":["banner-bg"],
+            "src":"assets/banners/home/colecao-unicagro.png",      
+            "link":{
+                "url":"/"
+            }
+		}
+	},
+
+    //products
+    "flex-layout.col#col-shelf-02":{  
+        "children":[
+            "flex-layout.row#collection-shelfs-02"
+        ],
+        "props":{    
+            "blockClass": ["absolute"],        
+            "width":"60%"
+        }
+    },
+    "flex-layout.row#collection-shelfs-02":{
+		"children":[
+			"list-context.product-list#collection-shelf-02"
+		],
+		"props":{
+			//"paddingTop": "3",
+			"blockClass":["carousel"]
+		},
+		"title": "Row - Shelf 02"
+	},
+
+    "list-context.product-list#collection-shelf-02": {
+		"blocks": ["product-summary.shelf"],
+		"children": ["slider-layout#slider-collection-bg"],
+		"props": {
+            "collection":"137",
+			"orderBy": "OrderByTopSaleDESC"
+		}
+	},
+
+
+    //slider
+    "slider-layout#slider-collection-bg": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 3,
+				"tablet": 2,
+				"phone": 2
+			},
+			"centerModeSlidesGap":8,
+			"centerMode": {
+				"desktop": "disabled",
+				"tablet": "disabled",
+				"phone": "to-the-left"
+			},
+			"infinite": false,
+			"fullWidth": true,
+			"showNavigationArrows": "desktopOnly",
+			"showPaginationDots": "mobileOnly",
+			"blockClass": ["shelf", "carousel"]
+		}
+	}
+}

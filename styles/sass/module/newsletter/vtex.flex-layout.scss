@@ -1,0 +1,51 @@
+.flexRow--newsletter {
+    //background-color: $primaryColor;
+    position: relative;
+
+    
+    
+
+    &.flexRow--tpl-1 {
+        padding: 30px 0;
+    }
+
+    &.flexRow--tpl-2 {
+        position: relative;
+        &::before {
+            position: absolute;
+            z-index: 1;
+            content: "";
+            height: 50%;
+            background-color: #fff;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+        .flexRowContent--newsletter {
+            background-color: $primaryColor;
+            padding: 20px;
+            border-radius: $radius;
+        }
+        :global(.vtex-store-components-3-x-container) {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+   
+}
+.flexRowContent--newsletter {
+    align-items: center;
+    column-gap: 34px;
+    row-gap: 15px;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    &.flexRowContent--tpl-2 {
+        flex-direction: column;
+        .stretchChildrenWidth {
+            width: 100% !important;
+            max-width: 640px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+//header - desktop
+.flexRow--desktop-header {    
+    background-color: $primaryColor;
+    .flexRowContent{		
+		column-gap: 10px;
+		//padding: 20px 0;
+		height: 80px;
+    }
+}
+
+//search - desktop
+.flexColChild--col-search {
+	padding: 0 $column;
+}
+
+//login
+.flexColChild--col-login {
+	display: flex;
+	flex-direction: column;
+
+}
+
+//==========================================================================
+//   RESPONSIVO MOBILE
+//==========================================================================
+
+.flexRow--mobile-content-header{
+    background-color: $primaryColor;
+    
+    .flexRowContent{				
+		column-gap: 5px;
+		height: 50px;
+    }
+}
+
+
+.flexRow--header-mobile-search {
+  	padding: 5px 5px 10px;	
+	background-color:$primaryColor;
+}

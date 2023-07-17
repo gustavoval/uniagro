@@ -1,0 +1,41 @@
+{
+	"store.custom#template-institucional": {
+		"blocks": [			
+			"flex-layout.row#institucional-banner",
+			"flex-layout.row#institucional-wrap"
+		]
+	},
+	"flex-layout.row#institucional-wrap":{
+		"children":[      
+			"flex-layout.col#institucional-content",
+			"flex-layout.col#institucional-menu"
+		],
+		"props":{
+			//"fullWidth":true,
+			"paddingTop":"6",
+			"blockClass":["wrap","wCol"]
+		}
+	},
+
+	"flex-layout.col#institucional-content":{
+		"children":[
+			"image#institucional-banner-inner",
+			"rich-text#institucional-title",
+			"rich-text#institucional-content"
+		],
+		"props":{			
+			"width":"78%",			
+			"blockClass": "col-content-institucional"
+		},
+		"title": "Conteúdo"
+	},
+
+	"rich-text#institucional-content": {
+		"props": {
+			"textAlignment": "LEFT",			
+			"text": "## What is Lorem Ipsum? \n\n **Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+			"blockClass": ["i-cta"]
+		}
+	}
+
+}

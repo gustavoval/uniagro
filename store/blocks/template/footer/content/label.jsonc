@@ -1,0 +1,247 @@
+{
+	
+	//payment
+	"flex-layout.row#ft-payment": {
+		"children": [            
+			"flex-layout.col#payment-title",
+			"flex-layout.col#payment-img"
+		],
+		"props": {
+			"preventHorizontalStretch": true,
+			"blockClass": "wp-label"
+		}
+	},
+
+	
+	"flex-layout.col#payment-title":{
+		"children":[
+			"rich-text#payment-title"
+		],
+		"props":{
+			"verticalAlign": "middle"
+		}
+	},
+
+	"rich-text#payment-title": {
+		"props": {
+			"textAlignment": "LEFT",
+			"textPosition": "LEFT",
+			"text": "Formas de Pagamento:",
+			"blockClass": ["footer-subtitle"]
+		}
+	},
+
+	
+	"flex-layout.col#payment-img":{
+		"children":[
+			"image#payment-img"
+		],
+		"props":{
+			"blockClass":"img-payment",
+			"horizontalAlign":"left",
+			"verticalAlign": "middle"
+		}
+	},
+
+	"image#payment-img":{
+		"props":{      
+			"src": "assets/payments/formas-de-pagamento-2.png"
+		}
+	},
+
+
+	"flex-layout.row#ft-security": {
+		"children": [            
+			"rich-text#security-title",
+			"flex-layout.col#security-imgs"
+		],
+		"props": {
+			"preventHorizontalStretch": true,
+			"blockClass": "wp-label"
+		}
+	},
+
+
+	//security
+	
+	"flex-layout.col#security-title":{
+		"children":[
+			"rich-text#security-title"
+		],
+		"props":{
+			"verticalAlign": "middle"
+		}
+	},
+
+	"rich-text#security-title": {
+		"props": {
+			"text": "Segurança:",
+			"textAlignment": "LEFT",
+			"textPosition": "LEFT",
+			"blockClass": ["footer-subtitle"]
+		}
+	},
+	
+	"flex-layout.col#security-imgs":{
+		"children":[			
+			"flex-layout.row#security-imgs"
+		],
+		"props":{
+			"blockClass":"img-security",
+			"horizontalAlign":"left",
+			"verticalAlign": "middle"
+		}
+	},
+
+	"flex-layout.row#security-imgs": {
+		"children": [            
+			"flex-layout.col#security-img-01",
+			"flex-layout.col#security-img-02"
+		],
+		"props": {
+			"colGap":"4",
+			"horizontalAlign": "left",
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile":true
+		}
+	},
+
+	"flex-layout.col#security-img-01":{
+		"children":[
+			"image#security-logo-1"
+		],
+		"props":{
+			"verticalAlign": "middle"
+		}
+	},
+	"image#security-logo-1":{
+		"props":{
+			"link":{
+				"url": "https://secure.vtex.com/?an=uniagro",
+				"newTab": true
+			},
+			"src": "assets/security/pci.png"
+		}
+	},
+
+	"flex-layout.col#security-img-02":{
+		"children":[
+			"image#security-logo-2"
+		],
+		"props":{
+			"verticalAlign": "middle"
+		}
+	},
+	"image#security-logo-2":{
+		"props":{
+			"link":{
+				"url": "https://secure.vtex.com/?an=uniagro",
+				"newTab": true
+			},
+			"src": "assets/security/lets.png"
+		}
+	},
+
+	
+
+
+	//powered
+	"flex-layout.row#ft-powered": {
+		"children": [            
+			"flex-layout.col#powered-title",
+			"flex-layout.col#powered-imgs"
+		],
+		"props": {
+			"preventHorizontalStretch": true,
+			"blockClass": "wp-label"
+		}
+	},
+
+	//title
+	"flex-layout.col#powered-title":{
+		"children":[
+			"rich-text#powered-title"
+		],
+		"props":{			
+			"verticalAlign": "middle"
+		}
+	},
+
+	"rich-text#powered-title": {
+		"props": {
+			"text": "Powered by:",
+			"textAlignment": "LEFT",
+			"textPosition": "LEFT",
+			"blockClass": ["footer-subtitle"]
+		}
+	},
+
+	//images
+	"flex-layout.col#powered-imgs":{
+		"children":[
+			//"image#powered-logo-1",
+        	//"image#powered-logo-2"
+			"flex-layout.row#powered-imgs"
+		],
+		"props":{
+			"blockClass":"img-powered",
+			"horizontalAlign":"left",
+			"verticalAlign": "middle"
+			
+		}
+	},
+
+	"flex-layout.row#powered-imgs": {
+		"children": [            
+			"flex-layout.col#powered-img-01",
+			"flex-layout.col#powered-img-02"
+		],
+		"props": {
+			"colGap":"4",
+			"horizontalAlign": "left",
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile":true
+		}
+	},
+
+	
+	"flex-layout.col#powered-img-01":{
+		"children":[
+			"image#powered-logo-1"
+		],
+		"props":{
+			"verticalAlign": "middle"
+		}
+	},
+
+	"image#powered-logo-1":{
+		"props":{
+			"link":{
+				"url": "https://www.selia.com.br/",
+				"newTab": true
+			},
+			"src": "assets/sponsors/agencia.png"
+		}
+	},
+	
+	
+	"flex-layout.col#powered-img-02":{
+		"children":[
+			"image#powered-logo-2"
+		],
+		"props":{
+			"verticalAlign": "middle"
+		}
+	},
+
+	"image#powered-logo-2":{
+		"props":{
+			"link":{
+				"url": "https://www.vtex.com",
+				"newTab": true
+			},
+			"src": "assets/sponsors/vtex.png"
+		}
+	}
+
+}

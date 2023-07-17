@@ -1,0 +1,55 @@
+
+
+.paragraph--text-pdp {
+    font-size: 13px;    
+    margin: 0;    
+}
+
+.link--text-pdp {
+    color: $base;
+}
+:global(.vtex-store-components-3-x-imageElement--icon-pdp-help) {
+    width: 30px;
+    height: 30px;
+}
+
+.link--text-post-hover {
+    background-color: $primaryColor !important;
+    color: #fff !important;
+}
+
+//modal subscription
+.wrapper--sub-deals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+}
+.paragraph--sub-deals {
+    color: $primaryColor;
+    font-weight: $sBold;
+    font-size: 12px;    
+    margin: 0;
+    text-align: center;
+}
+.paragraph--qty-subscription {
+    font-size: 15px;
+    line-height: 18px;
+    margin: 20px 0 8px;    
+}
+.paragraph--buy-button-sub {
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: $radius;
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    height: 52px;
+    column-gap: 6px;
+    font-size: 12px;
+}
+.strong--buy-button-sub {
+    font-size: 15px;
+}

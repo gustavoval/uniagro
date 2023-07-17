@@ -1,0 +1,630 @@
+{
+  
+	//col
+	"flex-layout.row#desktop-menu": {
+		"children": [
+			"menu-item#produtos",
+			"menu-item#azeites",
+			"menu-item#vinagres",
+			"menu-item#condimentos",
+			"menu-item#conservas",
+			"menu-item#salgadinhos",
+			"menu-item#frutassecas",
+			"menu-item#nuts",
+			"menu-item#granolas",
+			"menu-item#organicos"
+			//"menu-item#kits"
+			//"menu-item#ofertas"
+		],
+		"props":{
+			"colSizing": "auto",
+			"horizontalAlign": "center",      
+            "verticalAlign": "middle",
+			"blockClass":["horizontal-menu"],
+			"experimentalOptimizeRendering": true
+        }
+	},
+
+	//produtos
+	"menu-item#produtos": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-kits",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/produtos",
+				"noFollow": false,
+				"tagTitle": "Produtos",
+				"text": "Produtos"
+			}
+		}
+	},
+
+	//azeites	
+	"menu-item#azeites": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-kits",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/azeites-e-oleos",
+				"noFollow": false,
+				"tagTitle": "Azeites e Óleos",
+				"text": "Azeites e Óleos"
+			}
+		}
+	},
+
+	//vinagres	
+	"menu-item#vinagres": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-kits",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/vinagres-e-balsamicos",
+				"noFollow": false,
+				"tagTitle": "Vinagres e Balsâmicos",
+				"text": "Vinagres e Balsâmicos"
+			}
+		}
+	},
+
+
+
+	//condimentos
+	"menu-item#condimentos": {
+			"title": "link menu",
+			"props": {
+				"id": "menu-item-condimentos",
+				"type": "custom",
+				"iconId": null,
+				"blockClass": "menu__link",			
+				"highlight": false,
+				"widht": "auto",
+				"itemProps": {
+					"type": "internal",
+					"href": "/condimentos",
+					"noFollow": true,
+					"title": "Molhos e Atomatados",
+					"text": "Molhos e Atomatados"
+				}
+			},
+			"blocks": ["vtex.menu@2.x:submenu#condimentos"]
+		},
+		"vtex.menu@2.x:submenu#condimentos": {
+			"props": {
+				"width": "100%",
+				"fullScreen": true,
+				"blockClass": "mega-menu"
+			},
+			"children": [
+				"vtex.menu@2.x:menu#sub-condimentos"
+				//"image#banner-condimentos"
+			]
+		},
+		
+		"vtex.menu@2.x:menu#sub-condimentos": {
+			"props": {
+				"orientation": "vertical",
+				"blockClass": "sub-area",
+				"items": [					
+					{
+						"type": "custom",
+						"href": "/condimentos/tomate-pelado",
+						"itemProps": {
+							"type": "custom",
+							"noFollow": false,
+							"tagTitle": "Tomate pelado",
+							"text": "Tomate pelado"
+						}
+					},
+					{
+						"type": "custom",
+						"href": "/condimentos/passata-de-tomate",
+						"itemProps": {
+							"type": "custom",
+							"noFollow": false,
+							"tagTitle": "Passata de tomate",
+							"text": "Passata de tomate"
+						}
+					},
+					{
+						"type": "custom",
+						"href": "/condimentos/molho-de-tomate",
+						"itemProps": {
+							"type": "custom",
+							"noFollow": false,
+							"tagTitle": "Molho de tomate",
+							"text": "Molho de tomate"
+						}
+					}
+				]
+			}
+		},
+		"image#banner-condimentos": {
+			"props": {
+				"blockClass": "menu-drop",
+				"src": "assets/banners/menu/drop-demo.jpg",
+				"link": {
+					"url": "/#"
+				}
+		}
+	},
+
+
+	
+
+	
+
+	//azeitonas
+	"menu-item#azeitonas": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-kits",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/azeitonas",
+				"noFollow": false,
+				"tagTitle": "Azeitonas",
+				"text": "Azeitonas"
+			}
+		}
+	},
+
+	//cogumelos
+	"menu-item#cogumelos": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-kits",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/cogumelos",
+				"noFollow": false,
+				"tagTitle": "Cogumelos",
+				"text": "Cogumelos"
+			}
+		}
+	},
+
+	
+	
+
+	//conservas
+	"menu-item#conservas": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-conservas",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",			
+			"highlight": false,
+			"widht": "auto",
+			"itemProps": {
+				"type": "internal",
+				"href": "/conservas",
+				"noFollow": true,
+				"title": "Conservas e Condimentos",
+				"text": "Conservas e Condimentos"
+			}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#conservas"]
+	},
+	"vtex.menu@2.x:submenu#conservas": {
+		"props": {
+			"width": "100%",
+			"fullScreen": true,
+			"blockClass": "mega-menu"
+		},
+		"children": [
+			"vtex.menu@2.x:menu#sub-conservas"
+			//"image#banner-conservas"
+		]
+	},
+	
+	"vtex.menu@2.x:menu#sub-conservas": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "sub-area",
+			"items": [
+				{
+					"type": "custom",
+					"href": "/conservas/tomate-seco",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Tomate seco",
+						"text": "Tomate seco"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/conservas/azeitona",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Azeitona",
+						"text": "Azeitona"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/conservas/cogumelo",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Cogumelo",
+						"text": "Cogumelo"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/conservas/alcaparras",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Alcaparras",
+						"text": "Alcaparras"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/conservas/aspargos",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Aspargos",
+						"text": "Aspargos"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/conservas/cereja",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Cereja",
+						"text": "Cereja"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/conservas/funghi",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Funghi",
+						"text": "Funghi"
+					}
+				}
+			]
+		}
+	},
+	"image#banner-conservas": {
+		"props": {
+			"blockClass": "menu-drop",
+			"src": "assets/banners/menu/drop-demo.jpg",
+			"link": {
+				"url": "/conservas"
+			}
+		}
+	},
+	
+
+
+	//nuts
+	"menu-item#nuts": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-nuts",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",			
+			"highlight": false,
+			"widht": "auto",
+			"itemProps": {
+				"type": "internal",
+				"href": "/nuts",
+				"noFollow": true,
+				"title": "Nuts",
+				"text": "Nuts"
+			}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#nuts"]
+	},
+	"vtex.menu@2.x:submenu#nuts": {
+		"props": {
+			"width": "100%",
+			"fullScreen": true,
+			"blockClass": "mega-menu"
+		},
+		"children": [
+			"vtex.menu@2.x:menu#sub-nuts"
+			//"image#banner-nuts"
+		]
+	},
+	
+	"vtex.menu@2.x:menu#sub-nuts": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "sub-area",
+			"items": [
+				{
+					"type": "custom",
+					"href": "/nuts/castanha-de-caju",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Castanha de caju",
+						"text": "Castanha de caju"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/nuts/castanha-do-para",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Castanha do pará",
+						"text": "Castanha do pará"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/nuts/amendoim",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Amendoim",
+						"text": "Amendoim"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/nuts/mix-nuts",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Mix nuts",
+						"text": "Mix nuts"
+					}
+				},				
+				{
+					"type": "custom",
+					"href": "/nuts/nozes",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Nozes",
+						"text": "Nozes"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/nuts/amendoa",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Amêndoa",
+						"text": "Amêndoa"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/nuts/avela",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Avelã",
+						"text": "Avelã"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/nuts/pistache",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Pistache",
+						"text": "Pistache"
+					}
+				}
+				
+			]
+		}
+	},
+	"image#banner-nuts": {
+		"props": {
+			"blockClass": "menu-drop",
+			"src": "assets/banners/menu/drop-demo.jpg",
+			"link": {
+				"url": "/nuts"
+			}
+		}
+	},
+
+
+	//Frutas secas
+	"menu-item#frutassecas": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-frutassecas",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/frutas-secas",
+				"noFollow": false,
+				"tagTitle": "Frutas Secas",
+				"text": "Frutas Secas"
+			}
+		}
+	},
+
+
+	//granolas
+	"menu-item#granolas": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-granolas",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/granolas",
+				"noFollow": false,
+				"tagTitle": "Granolas",
+				"text": "Granolas"
+			}
+		}
+	},
+
+	"menu-item#organicos": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-organicos",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/organicos",
+				"noFollow": false,
+				"tagTitle": "Orgânicos",
+				"text": "Orgânicos"
+			}
+		}
+	},
+
+
+
+	//Kits e presentes
+	"menu-item#kits": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-kits",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/kits-e-presentes",
+				"noFollow": false,
+				"tagTitle": "Kits e Presentes",
+				"text": "Kits e Presentes"
+			}
+		}
+	},
+
+
+	//salgadinhos
+	"menu-item#salgadinhos": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-salgadinhos",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",			
+			"highlight": false,
+			"widht": "auto",
+			"itemProps": {
+				"type": "internal",
+				"href": "/salgadinhos",
+				"noFollow": true,
+				"title": "Snaks",
+				"text": "Snaks"
+			}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#salgadinhos"]
+	},
+	"vtex.menu@2.x:submenu#salgadinhos": {
+		"props": {
+			"width": "100%",
+			"fullScreen": true,
+			"blockClass": "mega-menu"
+		},
+		"children": [
+			"vtex.menu@2.x:menu#sub-salgadinhos"
+			//"image#banner-nuts"
+		]
+	},
+	
+	"vtex.menu@2.x:menu#sub-salgadinhos": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "sub-area",
+			"items": [
+				{
+					"type": "custom",
+					"href": "/salgadinhos/milho-torrado",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Milho Torrado",
+						"text": "Milho Torrado"
+					}
+				},
+				{
+					"type": "custom",
+					"href": "/salgadinhos/nuts30g",
+					"itemProps": {
+						"type": "custom",
+						"noFollow": false,
+						"tagTitle": "Nuts 30g",
+						"text": "Nuts 30g"
+					}
+				}
+			]
+		}
+	},
+	
+
+	
+
+
+	//ofertas
+	"menu-item#ofertas": {
+		"title": "link menu",
+		"props": {
+			"id": "menu-item-ofertas",
+			"type": "custom",
+			"iconId": null,
+			"blockClass": "menu__link",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/ofertas",
+				"noFollow": false,
+				"tagTitle": "Ofertas",
+				"text": "Ofertas"
+			}
+		}
+	}
+	
+}
